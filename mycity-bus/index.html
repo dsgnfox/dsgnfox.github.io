@@ -1,0 +1,1954 @@
+<!DOCTYPE html>
+<html lang='ru'>
+<head>
+	<meta charset='UTF-8'>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Расписание автобусов</title>
+	<link rel='stylesheet' href='style.css'>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+</head>
+<body class="js-main-tabs">
+	<svg style='display: none;'>
+		<symbol id="arrow">
+			<path d="M15.9853 4.55969C15.7744 4.34884 15.4318 4.34884 15.2209 4.55969L8.5 11.2938L1.76589 4.55969C1.55504 4.34884 1.21241 4.34884 1.00155 4.55969C0.790701 4.77054 0.790701 5.11318 1.00155 5.32403L8.10465 12.4271C8.21008 12.5326 8.34186 12.5853 8.48682 12.5853C8.61861 12.5853 8.76357 12.5326 8.869 12.4271L15.9721 5.32403C16.1961 5.11318 16.1961 4.77054 15.9853 4.55969Z"/>
+		</symbol>
+	</svg>
+	<header class="header">
+		<nav class="header-tabs">
+			<ul>
+		    <li><a href="#gorod">Город</a></li>
+		    <li><a href="#dacha">Дачные</a></li>
+		    <li><a href="#mezhgorod">Межгород</a></li>
+		  </ul>
+		</nav>
+	</header>
+	<div class="date" data-currenttime="data-currenttime" style="display: none;"></div>
+	<div id="gorod">
+		<div class="route">
+			<div class="route-item">
+				<div class="route-header js-route-header">
+					<div class="route-header__wrap">
+						<div class="route-header__top">
+							<span class="route-header__arrow js-arrow">
+								<svg width="24" height="24" class="icon">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
+								</svg>
+							</span>
+							<h2>Маршрут № 1</h2>
+						</div>
+						<div class="route-header__subtxt">«ПАТП — Cудоремонтный завод»</div>
+					</div>
+				</div>
+				<div class="route-body">
+					<h3>Рабочие дни</h3>
+					<p class="txt-dot">От ПАТП</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">5:30</span></p>
+						<p><span data-time="data-time">6:13</span></p>
+						<p><span data-time="data-time">6:30</span></p>
+						<p><span data-time="data-time">6:40</span></p>
+						<p><span data-time="data-time">6:50</span></p>
+						<p><span data-time="data-time">7:00</span></p>
+						<p><span data-time="data-time">7:10</span></p>
+						<p><span data-time="data-time">7:20</span></p>
+						<p><span data-time="data-time">7:20</span> <span class="txt-gray">от АЗС</span></p>
+						<p><span data-time="data-time">7:33</span></p>
+						<p><span data-time="data-time">7:35</span> <span class="txt-gray">от Кузнецова</span></p>
+						<p><span data-time="data-time">7:42</span></p>
+						<p><span data-time="data-time">7:55</span> <span class="txt-gray">от Кузнецова</span></p>
+						<p><span data-time="data-time">7:57</span></p>
+						<p><span data-time="data-time">8:09</span></p>
+						<p><span data-time="data-time">8:21</span></p>
+						<p><span data-time="data-time">8:32</span></p>
+						<p><span data-time="data-time">8:43</span></p>
+						<p><span data-time="data-time">8:54</span></p>
+						<p><span data-time="data-time">9:05</span></p>
+						<p><span data-time="data-time">9:16</span></p>
+						<p><span data-time="data-time">9:27</span></p>
+						<p><span data-time="data-time">9:38</span></p>
+						<p><span data-time="data-time">9:49</span></p>
+						<p><span data-time="data-time">10:00</span></p>
+						<p><span data-time="data-time">10:11</span></p>
+						<p><span data-time="data-time">10:22</span></p>
+						<p><span data-time="data-time">10:33</span></p>
+						<p><span data-time="data-time">10:44</span></p>
+						<p><span data-time="data-time">10:55</span></p>
+						<p><span data-time="data-time">11:06</span></p>
+						<p><span data-time="data-time">11:17</span></p>
+						<p><span data-time="data-time">11:28</span></p>
+						<p><span data-time="data-time">11:39</span></p>
+						<p><span data-time="data-time">11:50</span></p>
+						<p><span data-time="data-time">12:01</span></p>
+						<p><span data-time="data-time">12:10</span></p>
+						<p><span data-time="data-time">12:20</span></p>
+						<p><span data-time="data-time">12:30</span></p>
+						<p><span data-time="data-time">12:40</span></p>
+						<p><span data-time="data-time">12:50</span></p>
+						<p><span data-time="data-time">13:00</span></p>
+						<p><span data-time="data-time">13:10</span></p>
+						<p><span data-time="data-time">13:20</span></p>
+						<p><span data-time="data-time">13:30</span></p>
+						<p><span data-time="data-time">13:40</span></p>
+						<p><span data-time="data-time">13:50</span></p>
+						<p><span data-time="data-time">14:00</span></p>
+						<p><span data-time="data-time">14:10</span></p>
+						<p><span data-time="data-time">14:20</span></p>
+						<p><span data-time="data-time">14:30</span></p>
+						<p><span data-time="data-time">14:40</span></p>
+						<p><span data-time="data-time">14:50</span></p>
+						<p><span data-time="data-time">15:00</span></p>
+						<p><span data-time="data-time">15:10</span></p>
+						<p><span data-time="data-time">15:20</span></p>
+						<p><span data-time="data-time">15:30</span></p>
+						<p><span data-time="data-time">15:40</span></p>
+						<p><span data-time="data-time">15:50</span></p>
+						<p><span data-time="data-time">16:00</span></p>
+						<p><span data-time="data-time">16:10</span></p>
+						<p><span data-time="data-time">16:20</span></p>
+						<p><span data-time="data-time">16:27</span></p>
+						<p><span data-time="data-time">16:35</span></p>
+						<p><span data-time="data-time">16:35</span></p>
+						<p><span data-time="data-time">16:43</span></p>
+						<p><span data-time="data-time">16:49</span></p>
+						<p><span data-time="data-time">16:55</span></p>
+						<p><span data-time="data-time">17:01</span></p>
+						<p><span data-time="data-time">17:10</span></p>
+						<p><span data-time="data-time">17:20</span></p>
+						<p><span data-time="data-time">17:33</span> <span class="txt-gray">от Кузнецова</span></p>
+						<p><span data-time="data-time">17:45</span></p>
+						<p><span data-time="data-time">18:00</span></p>
+						<p><span data-time="data-time">18:15</span></p>
+						<p><span data-time="data-time">18:32</span></p>
+						<p><span data-time="data-time">18:50</span></p>
+						<p><span data-time="data-time">19:10</span></p>
+						<p><span data-time="data-time">19:32</span></p>
+						<p><span data-time="data-time">20:00</span></p>
+						<p><span data-time="data-time">20:30</span></p>
+						<p><span data-time="data-time">21:00</span></p>
+					</div>
+					<p class="txt-dot">От судоремонтного завода</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">5:50</span></p>
+						<p><span data-time="data-time">6:32</span></p>
+						<p><span data-time="data-time">7:00</span></p>
+						<p><span data-time="data-time">7:20</span></p>
+						<p><span data-time="data-time">7:31</span></p>
+						<p><span data-time="data-time">7:40</span></p>
+						<p><span data-time="data-time">7:47</span></p>
+						<p><span data-time="data-time">7:54</span></p>
+						<p><span data-time="data-time">8:02</span></p>
+						<p><span data-time="data-time">8:10</span></p>
+						<p><span data-time="data-time">8:18</span></p>
+						<p><span data-time="data-time">8:25</span></p>
+						<p><span data-time="data-time">8:30</span></p>
+						<p><span data-time="data-time">8:36</span></p>
+						<p><span data-time="data-time">8:43</span></p>
+						<p><span data-time="data-time">8:54</span></p>
+						<p><span data-time="data-time">9:05</span></p>
+						<p><span data-time="data-time">9:16</span></p>
+						<p><span data-time="data-time">9:27</span></p>
+						<p><span data-time="data-time">9:38</span></p>
+						<p><span data-time="data-time">9:49</span></p>
+						<p><span data-time="data-time">10:00</span></p>
+						<p><span data-time="data-time">10:11</span></p>
+						<p><span data-time="data-time">10:22</span></p>
+						<p><span data-time="data-time">10:33</span></p>
+						<p><span data-time="data-time">10:44</span></p>
+						<p><span data-time="data-time">10:55</span></p>
+						<p><span data-time="data-time">11:06</span></p>
+						<p><span data-time="data-time">11:07</span></p>
+						<p><span data-time="data-time">11:28</span></p>
+						<p><span data-time="data-time">11:39</span></p>
+						<p><span data-time="data-time">11:50</span></p>
+						<p><span data-time="data-time">12:01</span></p>
+						<p><span data-time="data-time">12:10</span></p>
+						<p><span data-time="data-time">12:20</span></p>
+						<p><span data-time="data-time">12:30</span></p>
+						<p><span data-time="data-time">12:40</span></p>
+						<p><span data-time="data-time">12:50</span></p>
+						<p><span data-time="data-time">13:01</span></p>
+						<p><span data-time="data-time">13:10</span></p>
+						<p><span data-time="data-time">13:20</span></p>
+						<p><span data-time="data-time">13:30</span></p>
+						<p><span data-time="data-time">13:40</span></p>
+						<p><span data-time="data-time">13:50</span></p>
+						<p><span data-time="data-time">14:00</span></p>
+						<p><span data-time="data-time">14:10</span></p>
+						<p><span data-time="data-time">14:20</span></p>
+						<p><span data-time="data-time">14:30</span></p>
+						<p><span data-time="data-time">14:40</span></p>
+						<p><span data-time="data-time">14:50</span></p>
+						<p><span data-time="data-time">14:57</span></p>
+						<p><span data-time="data-time">15:02</span></p>
+						<p><span data-time="data-time">15:02</span></p>
+						<p><span data-time="data-time">15:10</span></p>
+						<p><span data-time="data-time">15:20</span></p>
+						<p><span data-time="data-time">15:30</span></p>
+						<p><span data-time="data-time">15:40</span></p>
+						<p><span data-time="data-time">15:50</span></p>
+						<p><span data-time="data-time">16:00</span></p>
+						<p><span data-time="data-time">16:09</span></p>
+						<p><span data-time="data-time">16:20</span></p>
+						<p><span data-time="data-time">16:30</span></p>
+						<p><span data-time="data-time">16:40</span></p>
+						<p><span data-time="data-time">16:50</span></p>
+						<p><span data-time="data-time">17:01</span></p>
+						<p><span data-time="data-time">17:11</span></p>
+						<p><span data-time="data-time">17:22</span></p>
+						<p><span data-time="data-time">17:28</span></p>
+						<p><span data-time="data-time">17:35</span></p>
+						<p><span data-time="data-time">17:45</span></p>
+						<p><span data-time="data-time">17:55</span></p>
+						<p><span data-time="data-time">18:08</span></p>
+						<p><span data-time="data-time">18:20</span></p>
+						<p><span data-time="data-time">18:35</span></p>
+						<p><span data-time="data-time">18:50</span></p>
+						<p><span data-time="data-time">19:10</span></p>
+						<p><span data-time="data-time">19:30</span></p>
+						<p><span data-time="data-time">20:00</span></p>
+						<p><span data-time="data-time">20:30</span></p>
+						<p><span data-time="data-time">21:05</span></p>
+						<p><span data-time="data-time">21:30</span></p>
+					</div>
+					<h3 class="txt-with-border">Суббота</h3>
+					<p class="txt-dot">От ПАТП</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">5:30</span></p>
+						<p><span data-time="data-time">6:13</span></p>
+						<p><span data-time="data-time">6:30</span></p>
+						<p><span data-time="data-time">6:45</span></p>
+						<p><span data-time="data-time">7:00</span></p>
+						<p><span data-time="data-time">7:10</span></p>
+						<p><span data-time="data-time">7:20</span></p>
+						<p><span data-time="data-time">7:30</span></p>
+						<p><span data-time="data-time">7:40</span></p>
+						<p><span data-time="data-time">7:50</span></p>
+						<p><span data-time="data-time">8:00</span></p>
+						<p><span data-time="data-time">8:10</span></p>
+						<p><span data-time="data-time">8:20</span></p>
+						<p><span data-time="data-time">8:30</span></p>
+						<p><span data-time="data-time">8:40</span></p>
+						<p><span data-time="data-time">8:50</span></p>
+						<p><span data-time="data-time">9:00</span></p>
+						<p><span data-time="data-time">9:11</span></p>
+						<p><span data-time="data-time">9:22</span></p>
+						<p><span data-time="data-time">9:33</span></p>
+						<p><span data-time="data-time">9:44</span></p>
+						<p><span data-time="data-time">9:55</span></p>
+						<p><span data-time="data-time">10:06</span></p>
+						<p><span data-time="data-time">10:17</span></p>
+						<p><span data-time="data-time">10:28</span></p>
+						<p><span data-time="data-time">10:39</span></p>
+						<p><span data-time="data-time">10:50</span></p>
+						<p><span data-time="data-time">11:01</span></p>
+						<p><span data-time="data-time">11:12</span></p>
+						<p><span data-time="data-time">11:23</span></p>
+						<p><span data-time="data-time">11:34</span></p>
+						<p><span data-time="data-time">11:45</span></p>
+						<p><span data-time="data-time">11:56</span></p>
+						<p><span data-time="data-time">12:07</span></p>
+						<p><span data-time="data-time">12:18</span></p>
+						<p><span data-time="data-time">12:29</span></p>
+						<p><span data-time="data-time">12:40</span></p>
+						<p><span data-time="data-time">12:51</span></p>
+						<p><span data-time="data-time">13:02</span></p>
+						<p><span data-time="data-time">13:13</span></p>
+						<p><span data-time="data-time">13:24</span></p>
+						<p><span data-time="data-time">13:35</span></p>
+						<p><span data-time="data-time">13:46</span></p>
+						<p><span data-time="data-time">14:00</span></p>
+						<p><span data-time="data-time">14:15</span></p>
+						<p><span data-time="data-time">14:30</span></p>
+						<p><span data-time="data-time">14:45</span></p>
+						<p><span data-time="data-time">15:00</span></p>
+						<p><span data-time="data-time">15:15</span></p>
+						<p><span data-time="data-time">15:30</span></p>
+						<p><span data-time="data-time">15:45</span></p>
+						<p><span data-time="data-time">16:00</span></p>
+						<p><span data-time="data-time">16:15</span></p>
+						<p><span data-time="data-time">16:30</span></p>
+						<p><span data-time="data-time">16:45</span></p>
+						<p><span data-time="data-time">17:00</span></p>
+						<p><span data-time="data-time">17:15</span></p>
+						<p><span data-time="data-time">17:30</span></p>
+						<p><span data-time="data-time">17:45</span></p>
+						<p><span data-time="data-time">18:00</span></p>
+						<p><span data-time="data-time">18:15</span></p>
+						<p><span data-time="data-time">18:40</span></p>
+						<p><span data-time="data-time">19:00</span></p>
+						<p><span data-time="data-time">19:30</span></p>
+						<p><span data-time="data-time">20:00</span></p>
+						<p><span data-time="data-time">20:40</span></p>
+					</div>
+					<p class="txt-dot">От судоремонтного завода</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">5:50</span></p>
+						<p><span data-time="data-time">6:32</span></p>
+						<p><span data-time="data-time">6:50</span></p>
+						<p><span data-time="data-time">7:20</span></p>
+						<p><span data-time="data-time">7:30</span></p>
+						<p><span data-time="data-time">7:40</span></p>
+						<p><span data-time="data-time">7:50</span></p>
+						<p><span data-time="data-time">7:55</span></p>
+						<p><span data-time="data-time">8:00</span></p>
+						<p><span data-time="data-time">8:10</span></p>
+						<p><span data-time="data-time">8:20</span></p>
+						<p><span data-time="data-time">8:30</span></p>
+						<p><span data-time="data-time">8:40</span></p>
+						<p><span data-time="data-time">8:50</span></p>
+						<p><span data-time="data-time">9:01</span></p>
+						<p><span data-time="data-time">9:12</span></p>
+						<p><span data-time="data-time">9:23</span></p>
+						<p><span data-time="data-time">9:33</span></p>
+						<p><span data-time="data-time">9:44</span></p>
+						<p><span data-time="data-time">9:55</span></p>
+						<p><span data-time="data-time">10:06</span></p>
+						<p><span data-time="data-time">10:17</span></p>
+						<p><span data-time="data-time">10:28</span></p>
+						<p><span data-time="data-time">10:39</span></p>
+						<p><span data-time="data-time">10:50</span></p>
+						<p><span data-time="data-time">11:01</span></p>
+						<p><span data-time="data-time">11:12</span></p>
+						<p><span data-time="data-time">11:23</span></p>
+						<p><span data-time="data-time">11:34</span></p>
+						<p><span data-time="data-time">11:45</span></p>
+						<p><span data-time="data-time">11:56</span></p>
+						<p><span data-time="data-time">12:07</span></p>
+						<p><span data-time="data-time">12:18</span></p>
+						<p><span data-time="data-time">12:29</span></p>
+						<p><span data-time="data-time">12:40</span></p>
+						<p><span data-time="data-time">12:51</span></p>
+						<p><span data-time="data-time">13:02</span></p>
+						<p><span data-time="data-time">13:13</span></p>
+						<p><span data-time="data-time">13:24</span></p>
+						<p><span data-time="data-time">13:35</span></p>
+						<p><span data-time="data-time">13:46</span></p>
+						<p><span data-time="data-time">13:57</span></p>
+						<p><span data-time="data-time">14:05</span></p>
+						<p><span data-time="data-time">14:20</span></p>
+						<p><span data-time="data-time">14:35</span></p>
+						<p><span data-time="data-time">14:50</span></p>
+						<p><span data-time="data-time">15:05</span></p>
+						<p><span data-time="data-time">15:20</span></p>
+						<p><span data-time="data-time">15:35</span></p>
+						<p><span data-time="data-time">15:50</span></p>
+						<p><span data-time="data-time">16:05</span></p>
+						<p><span data-time="data-time">16:20</span></p>
+						<p><span data-time="data-time">16:35</span></p>
+						<p><span data-time="data-time">16:50</span></p>
+						<p><span data-time="data-time">17:05</span></p>
+						<p><span data-time="data-time">17:20</span></p>
+						<p><span data-time="data-time">17:35</span></p>
+						<p><span data-time="data-time">17:50</span></p>
+						<p><span data-time="data-time">18:05</span></p>
+						<p><span data-time="data-time">18:20</span></p>
+						<p><span data-time="data-time">18:45</span></p>
+						<p><span data-time="data-time">19:15</span></p>
+						<p><span data-time="data-time">19:45</span></p>
+						<p><span data-time="data-time">20:20</span></p>
+						<p><span data-time="data-time">21:05</span></p>
+					</div>
+					<h3 class="txt-with-border">Воскресенье</h3>
+					<p class="txt-dot">От ПАТП</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">5:30</span></p>
+						<p><span data-time="data-time">6:13</span></p>
+						<p><span data-time="data-time">6:30</span></p>
+						<p><span data-time="data-time">6:45</span></p>
+						<p><span data-time="data-time">7:00</span></p>
+						<p><span data-time="data-time">7:15</span></p>
+						<p><span data-time="data-time">7:30</span></p>
+						<p><span data-time="data-time">7:45</span></p>
+						<p><span data-time="data-time">8:00</span></p>
+						<p><span data-time="data-time">8:15</span></p>
+						<p><span data-time="data-time">8:30</span></p>
+						<p><span data-time="data-time">8:45</span></p>
+						<p><span data-time="data-time">9:00</span></p>
+						<p><span data-time="data-time">9:15</span></p>
+						<p><span data-time="data-time">9:30</span></p>
+						<p><span data-time="data-time">9:45</span></p>
+						<p><span data-time="data-time">10:00</span></p>
+						<p><span data-time="data-time">10:15</span></p>
+						<p><span data-time="data-time">10:30</span></p>
+						<p><span data-time="data-time">10:45</span></p>
+						<p><span data-time="data-time">11:00</span></p>
+						<p><span data-time="data-time">11:15</span></p>
+						<p><span data-time="data-time">11:30</span></p>
+						<p><span data-time="data-time">11:45</span></p>
+						<p><span data-time="data-time">12:00</span></p>
+						<p><span data-time="data-time">12:15</span></p>
+						<p><span data-time="data-time">12:30</span></p>
+						<p><span data-time="data-time">12:45</span></p>
+						<p><span data-time="data-time">13:00</span></p>
+						<p><span data-time="data-time">13:15</span></p>
+						<p><span data-time="data-time">13:30</span></p>
+						<p><span data-time="data-time">13:45</span></p>
+						<p><span data-time="data-time">14:00</span></p>
+						<p><span data-time="data-time">14:15</span></p>
+						<p><span data-time="data-time">14:30</span></p>
+						<p><span data-time="data-time">14:45</span></p>
+						<p><span data-time="data-time">15:00</span></p>
+						<p><span data-time="data-time">15:15</span></p>
+						<p><span data-time="data-time">15:30</span></p>
+						<p><span data-time="data-time">15:45</span></p>
+						<p><span data-time="data-time">16:00</span></p>
+						<p><span data-time="data-time">16:15</span></p>
+						<p><span data-time="data-time">16:30</span></p>
+						<p><span data-time="data-time">16:45</span></p>
+						<p><span data-time="data-time">17:00</span></p>
+						<p><span data-time="data-time">17:15</span></p>
+						<p><span data-time="data-time">17:30</span></p>
+						<p><span data-time="data-time">17:45</span></p>
+						<p><span data-time="data-time">18:00</span></p>
+						<p><span data-time="data-time">18:15</span></p>
+						<p><span data-time="data-time">18:40</span></p>
+						<p><span data-time="data-time">19:00</span></p>
+						<p><span data-time="data-time">19:30</span></p>
+						<p><span data-time="data-time">20:00</span></p>
+						<p><span data-time="data-time">20:40</span></p>
+					</div>
+					<p class="txt-dot">От судоремонтного завода</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">5:50</span></p>
+						<p><span data-time="data-time">6:32</span></p>
+						<p><span data-time="data-time">6:50</span></p>
+						<p><span data-time="data-time">7:20</span> <span class="txt-gray">до Птицефабрики</span></p>
+						<p><span data-time="data-time">7:35</span></p>
+						<p><span data-time="data-time">7:50</span></p>
+						<p><span data-time="data-time">8:05</span></p>
+						<p><span data-time="data-time">8:20</span></p>
+						<p><span data-time="data-time">8:35</span></p>
+						<p><span data-time="data-time">8:50</span></p>
+						<p><span data-time="data-time">9:05</span></p>
+						<p><span data-time="data-time">9:20</span></p>
+						<p><span data-time="data-time">9:35</span></p>
+						<p><span data-time="data-time">9:50</span></p>
+						<p><span data-time="data-time">10:05</span></p>
+						<p><span data-time="data-time">10:20</span></p>
+						<p><span data-time="data-time">10:35</span></p>
+						<p><span data-time="data-time">10:50</span></p>
+						<p><span data-time="data-time">11:05</span></p>
+						<p><span data-time="data-time">11:20</span></p>
+						<p><span data-time="data-time">11:35</span></p>
+						<p><span data-time="data-time">11:50</span></p>
+						<p><span data-time="data-time">12:05</span></p>
+						<p><span data-time="data-time">12:20</span></p>
+						<p><span data-time="data-time">12:35</span></p>
+						<p><span data-time="data-time">12:50</span></p>
+						<p><span data-time="data-time">13:05</span></p>
+						<p><span data-time="data-time">13:20</span></p>
+						<p><span data-time="data-time">13:35</span></p>
+						<p><span data-time="data-time">13:50</span></p>
+						<p><span data-time="data-time">14:05</span></p>
+						<p><span data-time="data-time">14:20</span></p>
+						<p><span data-time="data-time">14:35</span></p>
+						<p><span data-time="data-time">14:50</span></p>
+						<p><span data-time="data-time">15:05</span></p>
+						<p><span data-time="data-time">15:20</span></p>
+						<p><span data-time="data-time">15:35</span></p>
+						<p><span data-time="data-time">15:50</span></p>
+						<p><span data-time="data-time">16:05</span></p>
+						<p><span data-time="data-time">16:20</span></p>
+						<p><span data-time="data-time">16:35</span></p>
+						<p><span data-time="data-time">16:50</span></p>
+						<p><span data-time="data-time">17:05</span></p>
+						<p><span data-time="data-time">17:20</span></p>
+						<p><span data-time="data-time">17:35</span></p>
+						<p><span data-time="data-time">17:50</span></p>
+						<p><span data-time="data-time">18:05</span></p>
+						<p><span data-time="data-time">18:20</span></p>
+						<p><span data-time="data-time">18:45</span></p>
+						<p><span data-time="data-time">19:15</span></p>
+						<p><span data-time="data-time">19:45</span></p>
+						<p><span data-time="data-time">20:20</span></p>
+						<p><span data-time="data-time">21:05</span></p>
+					</div>
+				</div>
+			</div>
+		<div class="route-item">
+				<div class="route-header js-route-header">
+					<div class="route-header__wrap">
+						<div class="route-header__top">
+							<span class="route-header__arrow js-arrow">
+								<svg width="24" height="24" class="icon">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
+								</svg>
+							</span>
+							<h2>Маршрут № 2</h2>
+						</div>
+						<div class="route-header__subtxt">«Речное училище — ЖД вокзал»</div>
+					</div>
+				</div>
+				<div class="route-body">
+					<h3>Рабочие дни</h3>
+					<p class="txt-dot">От речного училища</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">7:00</span> <span class="txt-gray">от ПАТП через КДЦ «Русь»</span></p>
+						<p><span data-time="data-time">9:00</span> <span class="txt-gray">от СРЗ</span></p>
+						<p><span data-time="data-time">12:25</span> <span class="txt-gray">от СРЗ</span></p>
+						<p><span data-time="data-time">13:15</span> <span class="txt-gray">от СРЗ</span></p>
+						<p><span data-time="data-time">15:05</span> <span class="txt-gray">от СРЗ</span></p>
+						<p><span data-time="data-time">16:35</span> <span class="txt-gray">от СРЗ</span></p>
+						<p><span data-time="data-time">17:15</span> <span class="txt-gray">от СРЗ через аэропорт</span></p>
+						<p><span data-time="data-time">18:05</span> <span class="txt-gray">от СРЗ</span></p>
+					</div>
+					<p class="txt-dot">От ЖД вокзала</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">6:20</span> <span class="txt-gray">до СРЗ через аэропорт</span></p>
+						<p><span data-time="data-time">7:20</span> <span class="txt-gray">до СРЗ через аэропорт</span></p>
+						<p><span data-time="data-time">8:25</span> <span class="txt-gray">по маршруту №4 до ПАТП</span></p>
+						<p><span data-time="data-time">9:20</span> <span class="txt-gray">до СРЗ через речное училище</span></p>
+						<p><span data-time="data-time">12:45</span></p>
+						<p><span data-time="data-time">13:35</span></p>
+						<p><span data-time="data-time">15:30</span></p>
+						<p><span data-time="data-time">16:55</span> <span class="txt-gray">через аэропорт</span></p>
+						<p><span data-time="data-time">17:40</span> <span class="txt-gray">до ПАТП</span></p>
+						<p><span data-time="data-time">18:25</span> <span class="txt-gray">через Золотавцево до ПАТП</span></p>
+					</div>
+					<h3 class="txt-with-border">Выходные дни</h3>
+					<p class="txt-dot">От речного училища</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">7:00</span> <span class="txt-gray">только в субботу</span></p>
+						<p><span data-time="data-time">9:15</span> <span class="txt-gray">от СРЗ</span></p>
+						<p><span data-time="data-time">13:50</span> <span class="txt-gray">от СРЗ</span></p>
+					</div>
+					<p class="txt-dot">От ЖД вокзала</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">6:30</span> <span class="txt-gray">только в субботу через ЖД вокзал</span></p>
+						<p><span data-time="data-time">7:20</span> <span class="txt-gray">только в субботу через ЖД вокзал до СРЗ</span></p>
+						<p><span data-time="data-time">8:25</span> <span class="txt-gray">только в субботу по маршруту №4 до ПАТП</span></p>
+						<p><span data-time="data-time">9:35</span> <span class="txt-gray">через ЖД вокзал до СРЗ</span></p>
+						<p><span data-time="data-time">14:10</span> <span class="txt-gray">через ЖД вокзал до СРЗ</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="route-item">
+				<div class="route-header js-route-header">
+					<div class="route-header__wrap">
+						<div class="route-header__top">
+							<span class="route-header__arrow js-arrow">
+								<svg width="24" height="24" class="icon">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
+								</svg>
+							</span>
+							<h2>Маршрут № 3</h2>
+						</div>
+						<div class="route-header__subtxt">«Судоремонтный завод — Аэропорт»</div>
+					</div>
+				</div>
+				<div class="route-body">
+					<h3>Рабочие дни</h3>
+					<p class="txt-dot">От судоремонтного завода</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">6:35</span> <span class="txt-gray">через Золотавцево</span></p>
+						<p><span data-time="data-time">7:00</span> <span class="txt-gray">от ПАТП через ЖД вокзал</span></p>
+						<p><span data-time="data-time">7:30</span></p>
+						<p><span data-time="data-time">7:50</span> <span class="txt-gray">через гимназию</span></p>
+						<p><span data-time="data-time">9:00</span> <span class="txt-gray">через ЖД вокзал</span></p>
+						<p><span data-time="data-time">10:05</span></p>
+						<p><span data-time="data-time">11:15</span></p>
+						<p><span data-time="data-time">12:00</span> <span class="txt-gray">от речного училища</span></p>
+						<p><span data-time="data-time">13:00</span></p>
+						<p><span data-time="data-time">14:25</span></p>
+						<p><span data-time="data-time">15:37</span></p>
+						<p><span data-time="data-time">16:35</span> <span class="txt-gray">через ЖД вокзал</span></p>
+						<p><span data-time="data-time">17:05</span></p>
+						<p><span data-time="data-time">17:15</span></p>
+						<p><span data-time="data-time">17:38</span></p>
+						<p><span data-time="data-time">18:05</span> <span class="txt-gray">через ЖД вокзал</span></p>
+					</div>
+					<p class="txt-dot">От аэропорта</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">6:25</span></p>
+						<p><span data-time="data-time">7:06</span></p>
+						<p><span data-time="data-time">7:28</span></p>
+						<p><span data-time="data-time">7:52</span> <span class="txt-gray">через Золотавцево</span></p>
+						<p><span data-time="data-time">8:20</span> <span class="txt-gray">через Золотавцево</span></p>
+						<p><span data-time="data-time">9:25</span> <span class="txt-gray">через Золотавцево до речного училища</span></p>
+						<p><span data-time="data-time">10:27</span> <span class="txt-gray">через Золотавцево до речного училища</span></p>
+						<p><span data-time="data-time">11:35</span> <span class="txt-gray">через Золотавцево</span></p>
+						<p><span data-time="data-time">12:20</span> <span class="txt-gray">через Золотавцево</span></p>
+						<p><span data-time="data-time">13:22</span> <span class="txt-gray">через Золотавцево</span></p>
+						<p><span data-time="data-time">14:45</span> <span class="txt-gray">через Золотавцево</span></p>
+						<p><span data-time="data-time">16:02</span> <span class="txt-gray">через Золотавцево</span></p>
+						<p><span data-time="data-time">17:01</span> <span class="txt-gray">через Золотавцево</span></p>
+						<p><span data-time="data-time">17:27</span> <span class="txt-gray">через Золотавцево</span></p>
+						<p><span data-time="data-time">17:35</span> <span class="txt-gray">через ЖД вокзал до ПАТП</span></p>
+						<p><span data-time="data-time">18:00</span> <span class="txt-gray">через Золотавцево</span></p>
+						<p><span data-time="data-time">18:30</span> <span class="txt-gray">через КДЦ «Русь» до ПАТП</span></p>
+					</div>
+					<h3 class="txt-with-border">Выходные дни</h3>
+					<p class="txt-dot">От судоремонтного завода</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">7:00</span> <span class="txt-gray">только в субботу от речного училища через ЖД вокзал</span></p>
+						<p><span data-time="data-time">7:00</span> <span class="txt-gray">только в субботу от ПАТП через КДЦ «Русь»</span></p>
+						<p><span data-time="data-time">7:55</span> <span class="txt-gray">только в субботу заезд к гимназии</span></p>
+						<p><span data-time="data-time">9:15</span> <span class="txt-gray">через ЖД вокзал</span></p>
+						<p><span data-time="data-time">10:15</span></p>
+						<p><span data-time="data-time">11:30</span></p>
+						<p><span data-time="data-time">12:45</span></p>
+						<p><span data-time="data-time">13:50</span> <span class="txt-gray">через ЖД вокзал</span></p>
+						<p><span data-time="data-time">15:10</span></p>
+						<p><span data-time="data-time">17:00</span> <span class="txt-gray">от речного училища</span></p>
+					</div>
+					<p class="txt-dot">От аэропорта</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">6:35</span> <span class="txt-gray">только в субботу до речного училища</span></p>
+						<p><span data-time="data-time">7:25</span></p>
+						<p><span data-time="data-time">8:20</span> <span class="txt-gray">через Золотавцево</span></p>
+						<p><span data-time="data-time">9:40</span> <span class="txt-gray">через Золотавцево</span></p>
+						<p><span data-time="data-time">10:35</span> <span class="txt-gray">через Золотавцево</span></p>
+						<p><span data-time="data-time">11:50</span> <span class="txt-gray">через Золотавцево</span></p>
+						<p><span data-time="data-time">13:07</span> <span class="txt-gray">через Золотавцево</span></p>
+						<p><span data-time="data-time">14:15</span> <span class="txt-gray">через Золотавцево</span></p>
+						<p><span data-time="data-time">15:45</span> <span class="txt-gray">до речного училища</span></p>
+						<p><span data-time="data-time">17:20</span> <span class="txt-gray">через КДЦ «Русь» до ПАТП</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="route-item">
+				<div class="route-header js-route-header">
+					<div class="route-header__wrap">
+						<div class="route-header__top">
+							<span class="route-header__arrow js-arrow">
+								<svg width="24" height="24" class="icon">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
+								</svg>
+							</span>
+							<h2>Маршрут № 4</h2>
+						</div>
+						<div class="route-header__subtxt">«ПАТП — ЖД вокзал»</div>
+					</div>
+				</div>
+				<div class="route-body">
+					<h3>Понедельник - суббота</h3>
+					<p class="txt-dot">От ПАТП</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">7:58</span> <span class="txt-gray">через гимназию</span></p>
+					</div>
+					<p class="txt-dot">От ЖД вокзала</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">8:25</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="route-item">
+				<div class="route-header js-route-header">
+					<div class="route-header__wrap">
+						<div class="route-header__top">
+							<span class="route-header__arrow js-arrow">
+								<svg width="24" height="24" class="icon">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
+								</svg>
+							</span>
+							<h2>Маршрут № 6</h2>
+						</div>
+						<div class="route-header__subtxt">«Судоремонтный завод — Гимназия»</div>
+					</div>
+				</div>
+				<div class="route-body">
+					<h3>Рабоче дни</h3>
+					<p class="txt-dot">От судоремонтного завода</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">7:58</span></p>
+						<p><span data-time="data-time">12:25</span> <span class="txt-gray">через ЖД вокзал</span></p>
+						<p><span data-time="data-time">13:15</span> <span class="txt-gray">через ЖД вокзал</span></p>
+						<p><span data-time="data-time">14:07</span></p>
+						<p><span data-time="data-time">15:05</span> <span class="txt-gray">через ЖД вокзал</span></p>
+					</div>
+					<p class="txt-dot">От гимназии</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">8:10</span> <span class="txt-gray">через аэропорт</span></p>
+						<p><span data-time="data-time">12:50</span></p>
+						<p><span data-time="data-time">13:45</span></p>
+						<p><span data-time="data-time">14:35</span></p>
+						<p><span data-time="data-time">15:40</span> <span class="txt-gray">до речного училища</span></p>
+					</div>
+					<h3 class="txt-with-border">Суббота</h3>
+					<p class="txt-dot">От судоремонтного завода</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">7:55</span></p>
+					</div>
+					<p class="txt-dot">От гимназии</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">8:15</span> <span class="txt-gray">через золотавцево</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="route-item">
+				<div class="route-header js-route-header">
+					<div class="route-header__wrap">
+						<div class="route-header__top">
+							<span class="route-header__arrow js-arrow">
+								<svg width="24" height="24" class="icon">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
+								</svg>
+							</span>
+							<h2>Маршрут № 7</h2>
+						</div>
+						<div class="route-header__subtxt">«Некрасова — Молокозавод»</div>
+					</div>
+				</div>
+				<div class="route-body">
+					<h3>Рабоче дни</h3>
+					<p class="txt-dot">От Некрасова</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">7:05</span></p>
+						<p><span data-time="data-time">7:30</span></p>
+						<p><span data-time="data-time">8:00</span> <span class="txt-gray">через гору до ПАТП</span></p>
+						<p><span data-time="data-time">16:55</span> <span class="txt-gray">от магазина «Золотой ключик»</span></p>
+						<p><span data-time="data-time">17:05</span></p>
+					</div>
+					<p class="txt-dot">От молокозавода</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">7:20</span> <span class="txt-gray">от Красноармейской</span></p>
+						<p><span data-time="data-time">7:30</span></p>
+						<p><span data-time="data-time">8:00</span> <span class="txt-gray">через гору до ПАТП</span></p>
+						<p><span data-time="data-time">17:07</span></p>
+						<p><span data-time="data-time">17:25</span></p>
+					</div>
+					<h3 class="txt-with-border">Суббота</h3>
+					<p class="txt-dot">От Некрасова</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">7:05</span> <span class="txt-gray">от магазина «Элли»</span></p>
+						<p><span data-time="data-time">7:35</span></p>
+					</div>
+					<p class="txt-dot">От молокозавода</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">7:15</span></p>
+						<p><span data-time="data-time">8:00</span> <span class="txt-gray">через гору до ПАТП</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="route-item">
+				<div class="route-header js-route-header">
+					<div class="route-header__wrap">
+						<div class="route-header__top">
+							<span class="route-header__arrow js-arrow">
+								<svg width="24" height="24" class="icon">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
+								</svg>
+							</span>
+							<h2>Маршрут № 8</h2>
+						</div>
+						<div class="route-header__subtxt">«ПАТП — Северная Чернь — Парковая»</div>
+					</div>
+				</div>
+				<div class="route-body">
+					<h3>Рабоче дни</h3>
+					<p class="txt-dot">От ПАТП</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">7:05</span></p>
+						<p><span data-time="data-time">17:05</span></p>
+					</div>
+					<p class="txt-dot">От парковая</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">7:30</span></p>
+						<p><span data-time="data-time">17:30</span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="dacha">
+	  	<div class="route">
+			<div class="route-item">
+				<div class="route-header js-route-header">
+					<div class="route-header__wrap">
+						<div class="route-header__top">
+							<span class="route-header__arrow js-arrow">
+								<svg width="24" height="24" class="icon">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
+								</svg>
+							</span>
+							<h2>№122 Благовещенье</h2>
+						</div>
+					</div>
+				</div>
+				<div class="route-body">
+					<h3>Рабочие дни</h3>
+					<p class="txt-dot">От ПАТП через КДЦ «Русь»</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">6:20</span></p>
+						<p><span data-time="data-time">17:30</span></p>
+					</div>
+					<p class="txt-dot">От Благовещенья</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">7:00</span> <span class="txt-gray">до ПАТП</span></p>
+						<p><span data-time="data-time">18:10</span> <span class="txt-gray">до ПАТП</span></p>
+					</div>
+					<h3 class="txt-with-border">Выходные дни</h3>
+					<p class="txt-dot">От ПАТП через КДЦ «Русь»</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">6:50</span></p>
+						<p><span data-time="data-time">15:00</span></p>
+					</div>
+					<p class="txt-dot">От Благовещенья</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">7:30</span> <span class="txt-gray">до Элли</span></p>
+						<p><span data-time="data-time">15:45</span> <span class="txt-gray">до Элли</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="route-item">
+				<div class="route-header js-route-header">
+					<div class="route-header__wrap">
+						<div class="route-header__top">
+							<span class="route-header__arrow js-arrow">
+								<svg width="24" height="24" class="icon">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
+								</svg>
+							</span>
+							<h2>№135 Ишутино от СРЗ</h2>
+						</div>
+					</div>
+				</div>
+				<div class="route-body">
+					<h3>Рабочие дни</h3>
+					<p class="txt-dot">От Ишутино</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">16:45</span> <span class="txt-gray">через Ишутино</span></p>
+					</div>
+					<h3 class="txt-with-border">Выходные дни</h3>
+					<p class="txt-dot">От Ишутино</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">16:30</span> <span class="txt-gray">через СРЗ / ПАТП</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="route-item">
+				<div class="route-header js-route-header">
+					<div class="route-header__wrap">
+						<div class="route-header__top">
+							<span class="route-header__arrow js-arrow">
+								<svg width="24" height="24" class="icon">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
+								</svg>
+							</span>
+							<h2>№135 Ишутино от магазина «Элли»</h2>
+						</div>
+					</div>
+				</div>
+				<div class="route-body">
+					<h3>Рабочие дни</h3>
+					<p class="txt-dot">От Ишутино</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">8:30</span> <span class="txt-gray">через Радугу</span></p>
+						<p><span data-time="data-time">9:35</span> <span class="txt-gray">через Радугу до ПАТП</span></p>
+						<p><span data-time="data-time">13:15</span> <span class="txt-gray">до ПАТП</span></p>
+						<p><span data-time="data-time">16:20</span> <span class="txt-gray">через Неводчикова</span></p>
+					</div>
+					<h3 class="txt-with-border">Выходные дни</h3>
+					<p class="txt-dot">От Ишутино</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">9:30</span> <span class="txt-gray">через Радугу до ПАТП</span></p>
+						<p><span data-time="data-time">11:20</span> <span class="txt-gray">через Радугу до ПАТП</span></p>
+						<p><span data-time="data-time">14:05</span></p>
+						<p><span data-time="data-time">16:35</span> <span class="txt-gray">через СРЗ до ПАТП</span></p>
+						<p><span data-time="data-time">18:05</span> <span class="txt-gray">до ПАТП</span></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="route-item">
+				<div class="route-header js-route-header">
+					<div class="route-header__wrap">
+						<div class="route-header__top">
+							<span class="route-header__arrow js-arrow">
+								<svg width="24" height="24" class="icon">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
+								</svg>
+							</span>
+							<h2>№136 Радуга</h2>
+						</div>
+					</div>
+				</div>
+				<div class="route-body">
+					<h3>Рабочие дни</h3>
+					<p class="txt-dot">От магазина «Элли»</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">9:15</span> <span class="txt-gray">через Ишутино</span></p>
+						<p><span data-time="data-time">12:30</span> <span class="txt-gray">через Северянку</span></p>
+						<p><span data-time="data-time">15:45</span></p>
+						<p><span data-time="data-time">16:10</span></p>
+					</div>
+					<p class="txt-dot">От Радуги</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">8:35</span> <span class="txt-gray">до ПАТП</span></p>
+						<p><span data-time="data-time">9:45</span> <span class="txt-gray">до ПАТП</span></p>
+						<p><span data-time="data-time">13:10</span> <span class="txt-gray">через Ишутино до ПАТП</span></p>
+						<p><span data-time="data-time">16:15</span> <span class="txt-gray">через Неводчикова</span></p>
+					</div>
+					<h3 class="txt-with-border">Выходные дни</h3>
+					<p class="txt-dot">От магазина «Элли»</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">9:10</span> <span class="txt-gray">через Ишутино</span></p>
+						<p><span data-time="data-time">11:00</span> <span class="txt-gray">через Ишутино</span></p>
+						<p><span data-time="data-time">13:30</span></p>
+						<p><span data-time="data-time">17:30</span></p>
+					</div>
+					<p class="txt-dot">От Радуги</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">9:40</span> <span class="txt-gray">до ПАТП</span></p>
+						<p><span data-time="data-time">11:30</span> <span class="txt-gray">до ПАТП</span></p>
+						<p><span data-time="data-time">14:00</span> <span class="txt-gray">через Ишутино</span></p>
+						<p><span data-time="data-time">16:30</span> <span class="txt-gray">через СРЗ до ПАТП</span></p>
+						<p><span data-time="data-time">18:00</span> <span class="txt-gray">через Ишутино до ПАТП</span></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="route-item">
+				<div class="route-header js-route-header">
+					<div class="route-header__wrap">
+						<div class="route-header__top">
+							<span class="route-header__arrow js-arrow">
+								<svg width="24" height="24" class="icon">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
+								</svg>
+							</span>
+							<h2>№137 Радуга</h2>
+						</div>
+					</div>
+				</div>
+				<div class="route-body">
+					<h3>Рабочие дни</h3>
+					<p class="txt-dot">От судоремонтного завода</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">8:00</span> <span class="txt-gray">через Ишутино</span></p>
+					</div>
+					<p class="txt-dot">От Радуги</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">16:40</span> <span class="txt-gray">через Ишутино</span></p>
+					</div>
+					<h3 class="txt-with-border">Выходные дни</h3>
+					<p class="txt-dot">От судоремонтного завода</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">9:10</span> <span class="txt-gray">через Ишутино</span></p>
+						<p><span data-time="data-time">15:50</span></p>
+					</div>
+					<p class="txt-dot">От Радуги</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">16:30</span> <span class="txt-gray">через Ишутино / СРЗ / ПАТП</span></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="route-item">
+				<div class="route-header js-route-header">
+					<div class="route-header__wrap">
+						<div class="route-header__top">
+							<span class="route-header__arrow js-arrow">
+								<svg width="24" height="24" class="icon">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
+								</svg>
+							</span>
+							<h2>№138 Пушкариха</h2>
+						</div>
+					</div>
+				</div>
+				<div class="route-body">
+					<h3>Рабочие дни</h3>
+					<p class="txt-dot">От магазина «Элли»</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">14:15</span> <span class="txt-gray">через Ишутино</span></p>
+					</div>
+					<p class="txt-dot">От Пушкарихи</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">9:00</span> <span class="txt-gray">до ПАТП</span></p>
+						<p><span data-time="data-time">14:45</span> <span class="txt-gray">до ПАТП</span></p>
+						<p><span data-time="data-time">17:55</span> <span class="txt-gray">через СРЗ до ПАТП</span></p>
+					</div>
+					<h3 class="txt-with-border">Выходные дни</h3>
+					<p class="txt-dot">От магазина «Элли»</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">8:15</span></p>
+						<p><span data-time="data-time">14:30</span></p>
+						<p><span data-time="data-time">16:30</span></p>
+					</div>
+					<p class="txt-dot">От Пушкарихи</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">8:40</span></p>
+						<p><span data-time="data-time">17:00</span></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="route-item">
+				<div class="route-header js-route-header">
+					<div class="route-header__wrap">
+						<div class="route-header__top">
+							<span class="route-header__arrow js-arrow">
+								<svg width="24" height="24" class="icon">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
+								</svg>
+							</span>
+							<h2>№139 Пушкариха</h2>
+						</div>
+					</div>
+				</div>
+				<div class="route-body">
+					<h3>Рабочие дни</h3>
+					<p class="txt-dot">От судоремонтного завода</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">8:25</span></p>
+						<p><span data-time="data-time">17:15</span> <span class="txt-gray">через ЖД вокзал и аэропорт</span></p>
+					</div>
+					<p class="txt-dot">От Пушкарихи</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">17:55</span> <span class="txt-gray">СРЗ / ПАТП</span></p>
+					</div>
+					<h3 class="txt-with-border">Выходные дни</h3>
+					<p class="txt-dot">От Пушкарихи</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">15:00</span></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="route-item">
+				<div class="route-header js-route-header">
+					<div class="route-header__wrap">
+						<div class="route-header__top">
+							<span class="route-header__arrow js-arrow">
+								<svg width="24" height="24" class="icon">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
+								</svg>
+							</span>
+							<h2>№140 Северянка</h2>
+						</div>
+					</div>
+				</div>
+				<div class="route-body">
+					<h3>Рабочие дни</h3>
+					<p class="txt-dot">От магазина «Элли»</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">8:35</span> <span class="txt-gray">пересадка в Северянке на автобус от СРЗ до Пушкарихи</span></p>
+					</div>
+					<p class="txt-dot">От Северянки</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">12:50</span> <span class="txt-gray">через Радугу до ПАТП</span></p>
+					</div>
+					<h3 class="txt-with-border">Выходные дни</h3>
+					<p class="txt-dot">От судоремонтного завода</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">8:00</span> <span class="txt-gray">пересадка в Северянке на автобус от Элли до Пушкарихи</span></p>
+					</div>
+					<p class="txt-dot">От Северянки</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">8:40</span></p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<div id="mezhgorod">
+	  	<div class="route">
+			<div class="route-item">
+				<div class="route-header js-route-header">
+					<div class="route-header__wrap">
+						<div class="route-header__top">
+							<span class="route-header__arrow js-arrow">
+								<svg width="24" height="24" class="icon">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
+								</svg>
+							</span>
+							<h2>№101 Усть-Алексеево</h2>
+						</div>
+					</div>
+				</div>
+				<div class="route-body">
+					<h3>Четверг</h3>
+					<p class="txt-dot">От ПАТП Великого Устюга</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">8:00</span></p>
+						<p><span data-time="data-time">15:00</span></p>
+					</div>
+					<p class="txt-dot">Из Усть-Алексеево</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">9:50</span></p>
+						<p><span data-time="data-time">16:50</span></p>
+					</div>
+					<h3 class="txt-with-border">Пятница</h3>
+					<p class="txt-dot">От ПАТП Великого Устюга</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">8:00</span></p>
+						<p><span data-time="data-time">15:00</span></p>
+					</div>
+					<p class="txt-dot">Из Усть-Алексеево</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">10:30</span></p>
+						<p><span data-time="data-time">17:30</span></p>
+					</div>
+					<h3 class="txt-with-border">Воскресенье</h3>
+					<p class="txt-dot">От ПАТП Великого Устюга</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">14:00</span></p>
+					</div>
+					<p class="txt-dot">Из Усть-Алексеево</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">16:30</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="route-item">
+				<div class="route-header js-route-header">
+					<div class="route-header__wrap">
+						<div class="route-header__top">
+							<span class="route-header__arrow js-arrow">
+								<svg width="24" height="24" class="icon">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
+								</svg>
+							</span>
+							<h2>№102 Птицефабрика</h2>
+						</div>
+					</div>
+				</div>
+				<div class="route-body">
+					<h3>Рабочие дни</h3>
+					<p class="txt-dot">От СРЗ Великого Устюга</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">7:25</span></p>
+						<p><span data-time="data-time">14:25</span></p>
+						<p><span data-time="data-time">16:05</span> <span class="txt-gray">от ПАТП через КДЦ «Русь»</span></p>
+						<p><span data-time="data-time">16:50</span> <span class="txt-gray">от ПАТП через КДЦ «Русь»</span></p>
+						<p><span data-time="data-time">17:32</span></p>
+					</div>
+					<p class="txt-dot">От птицефабрики</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">7:00</span></p>
+						<p><span data-time="data-time">8:00</span></p>
+						<p><span data-time="data-time">14:50</span> <span class="txt-gray">до ПАТП</span></p>
+						<p><span data-time="data-time">16:10</span> <span class="txt-gray">до ПАТП</span></p>
+						<p><span data-time="data-time">17:05</span></p>
+						<p><span data-time="data-time">17:57</span> <span class="txt-gray">до ПАТП</span></p>
+					</div>
+					<h3 class="txt-with-border">Суббота</h3>
+					<p class="txt-dot">От СРЗ Великого Устюга</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">6:50</span> <span class="txt-gray">от ПАТП</span></p>
+						<p><span data-time="data-time">7:25</span></p>
+						<p><span data-time="data-time">16:55</span> <span class="txt-gray">от ПАТП</span></p>
+					</div>
+					<p class="txt-dot">Из Усть-Алексеево</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">7:00</span></p>
+						<p><span data-time="data-time">8:00</span> <span class="txt-gray">до ПАТП</span></p>
+						<p><span data-time="data-time">17:05</span> <span class="txt-gray">до ПАТП</span></p>
+					</div>
+					<h3 class="txt-with-border">Воскресенье</h3>
+					<p class="txt-dot">Из Великого Устюга</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">7:20</span></p>
+						<p><span data-time="data-time">16:55</span> <span class="txt-gray">от ПАТП</span></p>
+					</div>
+					<p class="txt-dot">Из Усть-Алексеево</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">8:00</span> <span class="txt-gray">до ПАТП</span></p>
+						<p><span data-time="data-time">17:05</span> <span class="txt-gray">до ПАТП</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="route-item">
+				<div class="route-header js-route-header">
+					<div class="route-header__wrap">
+						<div class="route-header__top">
+							<span class="route-header__arrow js-arrow">
+								<svg width="24" height="24" class="icon">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
+								</svg>
+							</span>
+							<h2>№103 Красавино</h2>
+						</div>
+					</div>
+				</div>
+				<div class="route-body">
+					<h3>Рабочие дни</h3>
+					<p class="txt-dot">От ПАТП Великого Устюга</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">7:30</span></p>
+						<p><span data-time="data-time">15:15</span></p>
+						<p><span data-time="data-time">16:45</span></p>
+					</div>
+					<p class="txt-dot">Из Красавино</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">6:40</span> <span class="txt-gray">по ул. Кирова до СРЗ</span></p>
+						<p><span data-time="data-time">7:00</span></p>
+						<p><span data-time="data-time">7:50</span> <span class="txt-gray">до речного училища</span></p>
+						<p><span data-time="data-time">15:00</span></p>
+						<p><span data-time="data-time">17:15</span> <span class="txt-gray">до Васильевского</span></p>
+					</div>
+					<h3 class="txt-with-border">Суббота</h3>
+					<p class="txt-dot">От ПАТП Великого Устюга</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">7:20</span></p>
+					</div>
+					<p class="txt-dot">Из Красавино</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">7:50 <span class="txt-gray">до речного училища</span></span></p>
+					</div>
+				</div>
+			</div>
+			<div class="route-item">
+				<div class="route-header js-route-header">
+					<div class="route-header__wrap">
+						<div class="route-header__top">
+							<span class="route-header__arrow js-arrow">
+								<svg width="24" height="24" class="icon">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
+								</svg>
+							</span>
+							<h2>№104 Морозовица</h2>
+						</div>
+					</div>
+				</div>
+				<div class="route-body">
+					<h3>Рабочие дни</h3>
+					<p class="txt-dot">От речного училища Великого Устюга</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">6:35</span> <span class="txt-gray">от ПАТП через КДЦ «Русь»</span></p>
+						<p><span data-time="data-time">13:15</span> <span class="txt-gray">Понедельник - от ПАТП через КДЦ «Русь»</span></p>
+						<p><span data-time="data-time">13:45</span> <span class="txt-gray">Вт-Пт - от ПАТП через КДЦ «Русь», кроме школьных каникул</span></p>
+						<p><span data-time="data-time">17:10</span> <span class="txt-gray">от ПАТП</span></p>
+						<p><span data-time="data-time">17:25</span></p>
+					</div>
+					<p class="txt-dot">Из Морозовицы</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">7:05</span></p>
+						<p><span data-time="data-time">9:00</span> <span class="txt-gray">кроме школьных каникул</span></p>
+						<p><span data-time="data-time">18:00</span> <span class="txt-gray">до ПАТП</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="route-item">
+				<div class="route-header js-route-header">
+					<div class="route-header__wrap">
+						<div class="route-header__top">
+							<span class="route-header__arrow js-arrow">
+								<svg width="24" height="24" class="icon">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
+								</svg>
+							</span>
+							<h2>№105 Подсосенье</h2>
+						</div>
+					</div>
+				</div>
+				<div class="route-body">
+					<h3>Рабочие дни</h3>
+					<p class="txt-dot">От речного училища Великого Устюга</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">6:30</span> <span class="txt-gray">от ПАТП через КДЦ «Русь»</span></p>
+						<p><span data-time="data-time">7:10</span> <span class="txt-gray">от СРЗ</span></p>
+						<p><span data-time="data-time">8:45</span> <span class="txt-gray">от СРЗ</span></p>
+						<p><span data-time="data-time">11:00</span></p>
+						<p><span data-time="data-time">12:15</span></p>
+						<p><span data-time="data-time">13:30</span></p>
+						<p><span data-time="data-time">14:40</span></p>
+						<p><span data-time="data-time">16:30</span></p>
+						<p><span data-time="data-time">17:30</span></p>
+						<p><span data-time="data-time">19:00</span> <span class="txt-gray">от СРЗ</span></p>
+					</div>
+					<p class="txt-dot">От Подсосенья</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">7:05</span> <span class="txt-gray">до СРЗ</span></p>
+						<p><span data-time="data-time">8:05</span> <span class="txt-gray">до СРЗ</span></p>
+						<p><span data-time="data-time">9:30</span></p>
+						<p><span data-time="data-time">11:40</span></p>
+						<p><span data-time="data-time">12:50</span></p>
+						<p><span data-time="data-time">14:05</span> <span class="txt-gray">до СРЗ</span></p>
+						<p><span data-time="data-time">15:15</span></p>
+						<p><span data-time="data-time">17:05</span> <span class="txt-gray">через гору до СРЗ</span></p>
+						<p><span data-time="data-time">18:15</span> <span class="txt-gray">до СРЗ</span></p>
+						<p><span data-time="data-time">19:35</span> <span class="txt-gray">до Новатора</span></p>
+						<p><span data-time="data-time">20:25</span> <span class="txt-gray">до Новатора</span></p>
+					</div>
+					<h3 class="txt-with-border">Выходные дни</h3>
+					<p class="txt-dot">От речного училища Великого Устюга</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">6:40</span> <span class="txt-gray">от ПАТП через КДЦ «Русь»</span></p>
+						<p><span data-time="data-time">7:10</span> <span class="txt-gray">от СРЗ</span></p>
+						<p><span data-time="data-time">8:40</span> <span class="txt-gray">от СРЗ</span></p>
+						<p><span data-time="data-time">11:00</span> <span class="txt-gray">от СРЗ</span></p>
+						<p><span data-time="data-time">12:15</span></p>
+						<p><span data-time="data-time">13:30</span></p>
+						<p><span data-time="data-time">14:40</span></p>
+						<p><span data-time="data-time">16:15</span></p>
+						<p><span data-time="data-time">17:40</span></p>
+						<p><span data-time="data-time">19:00</span> <span class="txt-gray">от СРЗ</span></p>
+					</div>
+					<p class="txt-dot">От Подсосенья</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">7:10</span> <span class="txt-gray">до СРЗ</span></p>
+						<p><span data-time="data-time">8:15</span> <span class="txt-gray">до СРЗ</span></p>
+						<p><span data-time="data-time">9:30</span></p>
+						<p><span data-time="data-time">11:40</span></p>
+						<p><span data-time="data-time">12:50</span></p>
+						<p><span data-time="data-time">14:05</span> <span class="txt-gray">до речного училища</span></p>
+						<p><span data-time="data-time">15:15</span></p>
+						<p><span data-time="data-time">17:05</span></p>
+						<p><span data-time="data-time">18:10</span> <span class="txt-gray">через КДЦ «Русь» до ПАТП</span></p>
+						<p><span data-time="data-time">19:35</span> <span class="txt-gray">до Новатора</span></p>
+						<p><span data-time="data-time">20:25</span> <span class="txt-gray">до СРЗ</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="route-item">
+				<div class="route-header js-route-header">
+					<div class="route-header__wrap">
+						<div class="route-header__top">
+							<span class="route-header__arrow js-arrow">
+								<svg width="24" height="24" class="icon">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
+								</svg>
+							</span>
+							<h2>№106 Новатор</h2>
+						</div>
+					</div>
+				</div>
+				<div class="route-body">
+					<h3>Рабочие дни</h3>
+					<p class="txt-dot">От речного училища Великого Устюга</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">6:50</span> <span class="txt-gray">от ПАТП через «Элли»</span></p>
+						<p><span data-time="data-time">7:10</span> <span class="txt-gray">от ПАТП через «Элли»</span></p>
+						<p><span data-time="data-time">7:48</span> <span class="txt-gray">от СРЗ</span></p>
+						<p><span data-time="data-time">8:30</span> <span class="txt-gray">от СРЗ</span></p>
+						<p><span data-time="data-time">9:30</span></p>
+						<p><span data-time="data-time">15:50</span></p>
+						<p><span data-time="data-time">18:15</span> <span class="txt-gray">от СРЗ</span></p>
+						<p><span data-time="data-time">21:02</span> <span class="txt-gray">от СРЗ</span></p>
+					</div>
+					<p class="txt-dot">От Новатора</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">7:05</span> <span class="txt-gray">до СРЗ</span></p>
+						<p><span data-time="data-time">8:05</span> <span class="txt-gray">до СРЗ</span></p>
+						<p><span data-time="data-time">9:30</span></p>
+						<p><span data-time="data-time">11:40</span></p>
+						<p><span data-time="data-time">12:50</span></p>
+						<p><span data-time="data-time">14:05</span> <span class="txt-gray">до СРЗ</span></p>
+						<p><span data-time="data-time">15:15</span></p>
+						<p><span data-time="data-time">17:05</span> <span class="txt-gray">через гору до СРЗ</span></p>
+						<p><span data-time="data-time">18:15</span> <span class="txt-gray">до СРЗ</span></p>
+						<p><span data-time="data-time">19:35</span> <span class="txt-gray">до Новатора</span></p>
+						<p><span data-time="data-time">20:25</span> <span class="txt-gray">до Новатора</span></p>
+					</div>
+					<h3 class="txt-with-border">Выходные дни</h3>
+					<p class="txt-dot">От речного училища Великого Устюга</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">6:40</span> <span class="txt-gray">от ПАТП через КДЦ «Русь»</span></p>
+						<p><span data-time="data-time">7:10</span> <span class="txt-gray">от СРЗ</span></p>
+						<p><span data-time="data-time">8:40</span> <span class="txt-gray">от СРЗ</span></p>
+						<p><span data-time="data-time">11:00</span> <span class="txt-gray">от СРЗ</span></p>
+						<p><span data-time="data-time">12:15</span></p>
+						<p><span data-time="data-time">13:30</span></p>
+						<p><span data-time="data-time">14:40</span></p>
+						<p><span data-time="data-time">16:15</span></p>
+						<p><span data-time="data-time">17:40</span></p>
+						<p><span data-time="data-time">19:00</span> <span class="txt-gray">от СРЗ</span></p>
+					</div>
+					<p class="txt-dot">Из Подсосенья</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">7:10</span> <span class="txt-gray">до СРЗ</span></p>
+						<p><span data-time="data-time">8:15</span> <span class="txt-gray">до СРЗ</span></p>
+						<p><span data-time="data-time">9:30</span></p>
+						<p><span data-time="data-time">11:40</span></p>
+						<p><span data-time="data-time">12:50</span></p>
+						<p><span data-time="data-time">14:05</span> <span class="txt-gray">до речного училища</span></p>
+						<p><span data-time="data-time">15:15</span></p>
+						<p><span data-time="data-time">17:05</span></p>
+						<p><span data-time="data-time">18:10</span> <span class="txt-gray">через КДЦ «Русь» до ПАТП</span></p>
+						<p><span data-time="data-time">19:35</span> <span class="txt-gray">до Новатора</span></p>
+						<p><span data-time="data-time">20:25</span> <span class="txt-gray">до СРЗ</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="route-item">
+				<div class="route-header js-route-header">
+					<div class="route-header__wrap">
+						<div class="route-header__top">
+							<span class="route-header__arrow js-arrow">
+								<svg width="24" height="24" class="icon">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
+								</svg>
+							</span>
+							<h2>№108 Стрига</h2>
+						</div>
+					</div>
+				</div>
+				<div class="route-body">
+					<h3>Рабочие дни</h3>
+					<p class="txt-dot">От ПАТП Великого Устюга</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">7:12</span></p>
+					</div>
+					<p class="txt-dot">От Новатора</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">7:22</span> <span class="txt-gray">до СРЗ</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="route-item">
+				<div class="route-header js-route-header">
+					<div class="route-header__wrap">
+						<div class="route-header__top">
+							<span class="route-header__arrow js-arrow">
+								<svg width="24" height="24" class="icon">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
+								</svg>
+							</span>
+							<h2>№109 Будрино</h2>
+						</div>
+					</div>
+				</div>
+				<div class="route-body">
+					<h3>Понедельник - суббота</h3>
+					<p class="txt-dot">От ПАТП Великого Устюга</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">6:25</span> <span class="txt-gray">через КДЦ «Русь»</span></p>
+						<p><span data-time="data-time">15:00</span> <span class="txt-gray">заезд к речному училищу</span></p>
+					</div>
+					<p class="txt-dot">От Будрино</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">7:00</span> <span class="txt-gray">через «Элли» до речного училища</span></p>
+						<p><span data-time="data-time">15:45</span> <span class="txt-gray">через «Элли» до речного училища</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="route-item">
+				<div class="route-header js-route-header">
+					<div class="route-header__wrap">
+						<div class="route-header__top">
+							<span class="route-header__arrow js-arrow">
+								<svg width="24" height="24" class="icon">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
+								</svg>
+							</span>
+							<h2>№110 Лодейка</h2>
+						</div>
+					</div>
+				</div>
+				<div class="route-body">
+					<h3>Вторник</h3>
+					<p class="txt-dot">От ПАТП Великого Устюга</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">8:00</span></p>
+						<p><span data-time="data-time">15:15</span></p>
+					</div>
+					<p class="txt-dot">От Лодейки</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">9:00</span> <span class="txt-gray">через КДЦ «Русь»</span></p>
+						<p><span data-time="data-time">15:45</span> <span class="txt-gray">через КДЦ «Русь»</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="route-item">
+				<div class="route-header js-route-header">
+					<div class="route-header__wrap">
+						<div class="route-header__top">
+							<span class="route-header__arrow js-arrow">
+								<svg width="24" height="24" class="icon">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
+								</svg>
+							</span>
+							<h2>№110 Лодейка</h2>
+						</div>
+					</div>
+				</div>
+				<div class="route-body">
+					<h3>Вторник</h3>
+					<p class="txt-dot">От ПАТП Великого Устюга</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">8:00</span></p>
+						<p><span data-time="data-time">15:15</span></p>
+					</div>
+					<p class="txt-dot">От Лодейки</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">9:00</span> <span class="txt-gray">через КДЦ «Русь»</span></p>
+						<p><span data-time="data-time">15:45</span> <span class="txt-gray">через КДЦ «Русь»</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="route-item">
+				<div class="route-header js-route-header">
+					<div class="route-header__wrap">
+						<div class="route-header__top">
+							<span class="route-header__arrow js-arrow">
+								<svg width="24" height="24" class="icon">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
+								</svg>
+							</span>
+							<h2>№117 Красавино — Дом интернат</h2>
+						</div>
+					</div>
+				</div>
+				<div class="route-body">
+					<h3>Рабочие дни</h3>
+					<p class="txt-dot">От автостанции Красавино</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">7:30</span></p>
+						<p><span data-time="data-time">8:30</span></p>
+						<p><span data-time="data-time">15:50</span></p>
+					</div>
+					<p class="txt-dot">От дома интерната</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">7:40</span></p>
+						<p><span data-time="data-time">9:10</span></p>
+						<p><span data-time="data-time">16:10</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="route-item">
+				<div class="route-header js-route-header">
+					<div class="route-header__wrap">
+						<div class="route-header__top">
+							<span class="route-header__arrow js-arrow">
+								<svg width="24" height="24" class="icon">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
+								</svg>
+							</span>
+							<h2>№127 Ядриха — ПАТП Великий Устюг</h2>
+						</div>
+					</div>
+				</div>
+				<div class="route-body">
+					<h3>Ежедневно</h3>
+					<p class="txt-dot">От Ядрихи</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">9:05</span></p>
+						<p><span data-time="data-time">14:30</span> <span class="txt-gray">до Котласа</span></p>
+						<p><span data-time="data-time">17:05</span> <span class="txt-gray">до Котласа</span></p>
+						<p><span data-time="data-time">17:55</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="route-item">
+				<div class="route-header js-route-header">
+					<div class="route-header__wrap">
+						<div class="route-header__top">
+							<span class="route-header__arrow js-arrow">
+								<svg width="24" height="24" class="icon">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
+								</svg>
+							</span>
+							<h2>№130 Усть-Алексеево — В.Варжа</h2>
+						</div>
+					</div>
+				</div>
+				<div class="route-body">
+					<h3>Воскресенье</h3>
+					<p class="txt-dot">От Усть-Алексеево</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">15:00</span></p>
+					</div>
+					<p class="txt-dot">От В.Варжа</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">15:45</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="route-item">
+				<div class="route-header js-route-header">
+					<div class="route-header__wrap">
+						<div class="route-header__top">
+							<span class="route-header__arrow js-arrow">
+								<svg width="24" height="24" class="icon">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
+								</svg>
+							</span>
+							<h2>№131 Усть-Алексеево — Томашево</h2>
+						</div>
+					</div>
+				</div>
+				<div class="route-body">
+					<h3>Пятница</h3>
+					<p class="txt-dot">От Усть-Алексеево</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">9:00</span></p>
+						<p><span data-time="data-time">16:00</span></p>
+					</div>
+					<p class="txt-dot">От Томашево</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">9:50</span></p>
+						<p><span data-time="data-time">16:50</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="route-item">
+				<div class="route-header js-route-header">
+					<div class="route-header__wrap">
+						<div class="route-header__top">
+							<span class="route-header__arrow js-arrow">
+								<svg width="24" height="24" class="icon">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
+								</svg>
+							</span>
+							<h2>№134 Усть-Алексеево — Теплогорье</h2>
+						</div>
+					</div>
+				</div>
+				<div class="route-body">
+					<h3>Четверг</h3>
+					<p class="txt-dot">От Усть-Алексеево</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">9:00</span></p>
+						<p><span data-time="data-time">16:00</span></p>
+					</div>
+					<p class="txt-dot">От Теплогорье</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">9:30</span></p>
+						<p><span data-time="data-time">16:30</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="route-item">
+				<div class="route-header js-route-header">
+					<div class="route-header__wrap">
+						<div class="route-header__top">
+							<span class="route-header__arrow js-arrow">
+								<svg width="24" height="24" class="icon">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
+								</svg>
+							</span>
+							<h2>№145 Золотавцево</h2>
+						</div>
+					</div>
+				</div>
+				<div class="route-body">
+					<h3>Рабочие дни</h3>
+					<p class="txt-dot">От СРЗ</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">6:35</span> <span class="txt-gray">от ПАТП через «Русь»</span></p>
+						<p><span data-time="data-time">7:00</span></p>
+						<p><span data-time="data-time">7:30</span> <span class="txt-gray">через аэропорт</span></p>
+						<p><span data-time="data-time">7:50</span> <span class="txt-gray">через аэропорт</span></p>
+						<p><span data-time="data-time">9:00</span> <span class="txt-gray">через ЖД вокзал</span></p>
+						<p><span data-time="data-time">10:05</span> <span class="txt-gray">через аэропорт</span></p>
+						<p><span data-time="data-time">11:15</span> <span class="txt-gray">через аэропорт</span></p>
+						<p><span data-time="data-time">12:00</span> <span class="txt-gray">от речного училища через аэропорт</span></p>
+						<p><span data-time="data-time">13:00</span> <span class="txt-gray">через аэропорт</span></p>
+						<p><span data-time="data-time">14:25</span> <span class="txt-gray">через аэропорт</span></p>
+						<p><span data-time="data-time">15:37</span> <span class="txt-gray">через аэропорт</span></p>
+						<p><span data-time="data-time">16:35</span> <span class="txt-gray">через аэропорт</span></p>
+						<p><span data-time="data-time">17:05</span> <span class="txt-gray">через аэропорт</span></p>
+						<p><span data-time="data-time">17:38</span> <span class="txt-gray">через аэропорт</span></p>
+						<p><span data-time="data-time">18:05</span> <span class="txt-gray">через ЖД вокзал</span></p>
+					</div>
+					<p class="txt-dot">Из Золотавцево</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">7:00</span> <span class="txt-gray">через ЖД вокзал</span></p>
+						<p><span data-time="data-time">7:25</span></p>
+						<p><span data-time="data-time">8:00</span></p>
+						<p><span data-time="data-time">8:30</span></p>
+						<p><span data-time="data-time">9:35</span> <span class="txt-gray">до речного училища</span></p>
+						<p><span data-time="data-time">10:35</span> <span class="txt-gray">до речного училища</span></p>
+						<p><span data-time="data-time">11:55</span></p>
+						<p><span data-time="data-time">12:30</span></p>
+						<p><span data-time="data-time">13:30</span></p>
+						<p><span data-time="data-time">15:00</span></p>
+						<p><span data-time="data-time">16:10</span></p>
+						<p><span data-time="data-time">17:07</span></p>
+						<p><span data-time="data-time">17:35</span></p>
+						<p><span data-time="data-time">18:05</span> <span class="txt-gray">через «Русь» до ПАТП</span></p>
+						<p><span data-time="data-time">18:35</span> <span class="txt-gray">через «Русь» до ПАТП</span></p>
+					</div>
+					<h3 class="txt-with-border">Выходные дни</h3>
+					<p class="txt-dot">От СРЗ</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">7:00</span> <span class="txt-gray">от ПАТП через «Русь»</span></p>
+						<p><span data-time="data-time">7:55</span> <span class="txt-gray">через аэропорт, в субботу через гимназию</span></p>
+						<p><span data-time="data-time">7:30</span> <span class="txt-gray">через аэропорт</span></p>
+						<p><span data-time="data-time">7:50</span> <span class="txt-gray">через аэропорт</span></p>
+						<p><span data-time="data-time">9:15</span> <span class="txt-gray">через ЖД вокзал</span></p>
+						<p><span data-time="data-time">10:15</span> <span class="txt-gray">через аэропорт</span></p>
+						<p><span data-time="data-time">11:30</span> <span class="txt-gray">через аэропорт</span></p>
+						<p><span data-time="data-time">12:45</span> <span class="txt-gray">через аэропорт</span></p>
+						<p><span data-time="data-time">13:50</span> <span class="txt-gray">через ЖД вокзал</span></p>
+						<p><span data-time="data-time">15:10</span> <span class="txt-gray">через аэропорт</span></p>
+						<p><span data-time="data-time">17:10</span> <span class="txt-gray">от речного училища через аэропорт</span></p>
+					</div>
+					<p class="txt-dot">Из Золотавцево</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">7:20</span> <span class="txt-gray">через аэропорт</span></p>
+						<p><span data-time="data-time">8:30</span></p>
+						<p><span data-time="data-time">9:50</span></p>
+						<p><span data-time="data-time">10:45</span></p>
+						<p><span data-time="data-time">12:10</span></p>
+						<p><span data-time="data-time">13:20</span></p>
+						<p><span data-time="data-time">14:25</span></p>
+						<p><span data-time="data-time">15:40</span> <span class="txt-gray">через аэропорт до речного училища</span></p>
+						<p><span data-time="data-time">17:30</span> <span class="txt-gray">через КДЦ «Русь» до ПАТП</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="route-item">
+				<div class="route-header js-route-header">
+					<div class="route-header__wrap">
+						<div class="route-header__top">
+							<span class="route-header__arrow js-arrow js-arrow--active">
+								<svg width="24" height="24" class="icon">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
+								</svg>
+							</span>
+							<h2>№303 Полдарса</h2>
+						</div>
+						<div class="route-header__subtxt">Тел. для записи <a href="tel:+79115225065">+7 911 522-50-65</a></div>
+					</div>
+				</div>
+				<div class="route-body">
+					<h3>Понедельник</h3>
+					<p class="txt-dot">От ПАТП</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">13:00</span></p>
+					</div>
+					<p class="txt-dot">Из Полдарсы</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">6:30</span></p>
+					</div>
+					<h3 class="txt-with-border">Вторник, пятница</h3>
+					<p class="txt-dot">От ПАТП</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">15:00</span></p>
+					</div>
+					<p class="txt-dot">Из Полдарсы</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">8:00</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="route-item">
+				<div class="route-header js-route-header">
+					<div class="route-header__wrap">
+						<div class="route-header__top">
+							<span class="route-header__arrow js-arrow">
+								<svg width="24" height="24" class="icon">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
+								</svg>
+							</span>
+							<h2>№304 Теплогорье</h2>
+						</div>
+					</div>
+				</div>
+				<div class="route-body">
+					<h3>Четверг</h3>
+					<p class="txt-dot">От ПАТП</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">8:00</span></p>
+						<p><span data-time="data-time">15:00</span></p>
+					</div>
+					<p class="txt-dot">От Теплогорье</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">9:30</span></p>
+						<p><span data-time="data-time">16:30</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="route-item">
+				<div class="route-header js-route-header">
+					<div class="route-header__wrap">
+						<div class="route-header__top">
+							<span class="route-header__arrow js-arrow">
+								<svg width="24" height="24" class="icon">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
+								</svg>
+							</span>
+							<h2>№306 Верхняя Варжа</h2>
+						</div>
+					</div>
+				</div>
+				<div class="route-body">
+					<h3>Воскресенье</h3>
+					<p class="txt-dot">От ПАТП</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">14:00</span></p>
+					</div>
+					<p class="txt-dot">От Верхней Варжи</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">15:45</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="route-item">
+				<div class="route-header js-route-header">
+					<div class="route-header__wrap">
+						<div class="route-header__top">
+							<span class="route-header__arrow js-arrow">
+								<svg width="24" height="24" class="icon">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
+								</svg>
+							</span>
+							<h2>№307 Томашево</h2>
+						</div>
+					</div>
+				</div>
+				<div class="route-body">
+					<h3>Пятница</h3>
+					<p class="txt-dot">От ПАТП</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">8:00</span></p>
+						<p><span data-time="data-time">15:00</span> <span class="txt-gray">заезд в Чернево</span></p>
+					</div>
+					<p class="txt-dot">От Верхней Варжи</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">9:50</span> <span class="txt-gray">заезд в Чернево</span></p>
+						<p><span data-time="data-time">16:50</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="route-item">
+				<div class="route-header js-route-header">
+					<div class="route-header__wrap">
+						<div class="route-header__top">
+							<span class="route-header__arrow js-arrow js-arrow--active">
+								<svg width="24" height="24" class="icon">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
+								</svg>
+							</span>
+							<h2>№505 Котлас</h2>
+						</div>
+						<div class="route-header__subtxt">Через Ядриху</div>
+					</div>
+				</div>
+				<div class="route-body">
+					<h3>Ежедневно</h3>
+					<p class="txt-dot">От ПАТП</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">5:50</span> <span class="txt-gray">от СРЗ через ЖДВ</span></p>
+						<p><span data-time="data-time">6:10</span> <span class="txt-gray">через ЖДВ</span></p>
+						<p><span data-time="data-time">8:30</span></p>
+						<p><span data-time="data-time">9:10</span> <span class="txt-gray">только суббота, воскресенье</span></p>
+						<p><span data-time="data-time">9:50</span></p>
+						<p><span data-time="data-time">12:20</span></p>
+						<p><span data-time="data-time">13:20</span> <span class="txt-gray">через ЖДВ</span></p>
+						<p><span data-time="data-time">14:30</span></p>
+						<p><span data-time="data-time">16:00</span> <span class="txt-gray">через ЖДВ</span></p>
+						<p><span data-time="data-time">17:00</span></p>
+						<p><span data-time="data-time">18:00</span></p>
+					</div>
+					<p class="txt-dot">Из Котласа</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">6:20</span></p>
+						<p><span data-time="data-time">8:15</span> <span class="txt-gray">через ЖДВ</span></p>
+						<p><span data-time="data-time">9:40</span> <span class="txt-gray">через ЖДВ</span></p>
+						<p><span data-time="data-time">11:00</span> <span class="txt-gray">только суббота, воскресенье</span></p>
+						<p><span data-time="data-time">12:25</span></p>
+						<p><span data-time="data-time">14:10</span></p>
+						<p><span data-time="data-time">15:25</span></p>
+						<p><span data-time="data-time">17:15</span> <span class="txt-gray">через ЖДВ</span></p>
+						<p><span data-time="data-time">18:00</span></p>
+						<p><span data-time="data-time">19:30</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="route-item">
+				<div class="route-header js-route-header">
+					<div class="route-header__wrap">
+						<div class="route-header__top">
+							<span class="route-header__arrow js-arrow js-arrow--active">
+								<svg width="24" height="24" class="icon">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
+								</svg>
+							</span>
+							<h2>№707 Вологда</h2>
+						</div>
+						<div class="route-header__subtxt">Тел. для записи <a href="tel:+79315008033">+7 931 500-80-33</a> / <a href="tel:+79005060443">+7 900 506-04-43</a></div>
+					</div>
+				</div>
+				<div class="route-body">
+					<h3>Рабочие дни</h3>
+					<p class="txt-dot">От ПАТП</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">0:10</span></p>
+					</div>
+					<p class="txt-dot">Из Вологды</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">17:00</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="route-item">
+				<div class="route-header js-route-header">
+					<div class="route-header__wrap">
+						<div class="route-header__top">
+							<span class="route-header__arrow js-arrow js-arrow--active">
+								<svg width="24" height="24" class="icon">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
+								</svg>
+							</span>
+							<h2>№735 Кич-Городок</h2>
+						</div>
+					</div>
+				</div>
+				<div class="route-body">
+					<h3>Ежедневно</h3>
+					<p class="txt-dot">От ПАТП</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">13:00</span> <span class="txt-gray">только пятница</span></p>
+						<p><span data-time="data-time">16:10</span></p>
+					</div>
+					<p class="txt-dot">Из Кич-Городка</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">7:50</span></p>
+						<p><span data-time="data-time">9:50</span> <span class="txt-gray">только пятница</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="route-item">
+				<div class="route-header js-route-header">
+					<div class="route-header__wrap">
+						<div class="route-header__top">
+							<span class="route-header__arrow js-arrow js-arrow--active">
+								<svg width="24" height="24" class="icon">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
+								</svg>
+							</span>
+							<h2>№736 Никольск</h2>
+						</div>
+					</div>
+				</div>
+				<div class="route-body">
+					<p class="txt-dot">От ПАТП</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">12:30</span> <span class="txt-gray">только воскресенье</span></p>
+						<p><span data-time="data-time">14:35</span> <span class="txt-gray">только пятница</span></p>
+					</div>
+					<p class="txt-dot">Из Никольска</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">16:20</span> <span class="txt-gray">только воскресенье</span></p>
+						<p><span data-time="data-time">18:05</span> <span class="txt-gray">только пятница</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="route-item">
+				<div class="route-header js-route-header">
+					<div class="route-header__wrap">
+						<div class="route-header__top">
+							<span class="route-header__arrow js-arrow js-arrow--active">
+								<svg width="24" height="24" class="icon">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
+								</svg>
+							</span>
+							<h2>№811 Северодвинск</h2>
+						</div>
+					</div>
+				</div>
+				<div class="route-body">
+					<h3>Ежедневно</h3>
+					<p class="txt-dot">От ПАТП</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">5:00</span></p>
+					</div>
+					<p class="txt-dot">Из Северодвинска</p>
+					<div class="route-body__row" data-timebox="data-timebox">
+						<p><span data-time="data-time">6:30</span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src='jquery-3.3.1.min.js'></script>
+	<script src='jquery-ui.min.js'></script>
+	<script src='jquery.scrollme.min.js'></script>
+	<script src='script.js'></script>
+</body>
+</html>
