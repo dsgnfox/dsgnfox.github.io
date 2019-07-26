@@ -14,17 +14,14 @@ $(function() {
 //
 $('audio').initAudioPlayer();
 
-// отправка формы
+// отправка формы -- отправку на скрипт убрал, потому что для гита
 $('#js-btn-submit').on('click', function(e) {
   var thisForm = $(this).parents("#js-form");
   var isvalidate = thisForm[0].checkValidity();
   if (isvalidate) {
     e.preventDefault();
-    $.get("sendmail.php", { name: $('#js-form-name').val(), phone: $('#js-form-tel').val(), email: $('#js-form-email').val(), txt: $('#js-form-txt').val() })
-    .done(function(data) {
-      swal("Ваш запрос принят!", "Спасибо за обращение.\nВ ближайшее время мы вам перезвоним!", "success");
-      thisForm[0].reset();
-    });
+    swal("Ваш запрос принят!", "Спасибо за обращение.\nВ ближайшее время мы вам перезвоним!", "success");
+    thisForm[0].reset();
   }
 });
 
