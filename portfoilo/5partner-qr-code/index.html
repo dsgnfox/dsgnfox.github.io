@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang='ru'>
+<head>
+	<meta charset='UTF-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<meta name='robots' content='noindex, nofollow' />
+	
+	<title>Заявка №1143 | Пятый партнер сервис</title>
+	
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic' rel='stylesheet'>
+	<link rel='stylesheet' href='css/style.css'>
+	
+	<link rel='apple-touch-icon' sizes='180x180' href='images/apple-touch-icon.png'>
+	<link rel='icon' type='image/png' sizes='32x32' href='images/favicon-32x32.png'>
+	<link rel='icon' type='image/png' sizes='16x16' href='images/favicon-16x16.png'>
+</head>
+<body>
+	<div class='wrapper'>
+		<header class='header'>
+			<div class='header__logo'><img src='images/logo__km.svg' alt='Konica Minolta' class='logo-minolta'></div>
+			<div class='header__line'></div>
+			<div class='header__logo'><img src='images/logo__5p.svg' alt='Пятый партнер' class='logo-5partner'></div>
+		</header>
+		<div class='title-page'>
+			<div class='title-page__txt'>Выезд №551263</div>
+			<div class='title-page__date'>от 29.07.2019</div>
+		</div>
+		<div class='content'>
+<!-- Форма инженера -->
+			<form autocomplete='off' class='form'>
+				<div class="input o-input__animation">
+					<input class="input__animation has_value" data-error="Cерийный номер МФУ (обязательно)" id="input__device_number" type="text" name="f_Number_MFU" value="A7R0027055057" required>
+					<label for="input__device_number">
+						<span>Серийный номер МФУ (обязательно)</span>
+					</label>
+					<div class="input__clear"><img src="images/clear.svg" alt=""></div>
+				</div>
+				<div class="input o-input__animation">
+					<select name="f_Engineer">
+						<option value="" disabled="disabled" selected="selected">Выбрать инженера</option>
+						<option value="1" id="f27201">Ветров</option>
+						<option value="2" id="f27202">Голов</option>
+						<option value="3" id="f27203">Карелин</option>
+						<option value="4" id="f27204">Кондуков</option>
+						<option value="5" id="f27205">Костев</option>
+						<option value="6" id="f27206">Маркин</option>
+						<option value="7" id="f27207">Савин</option>
+						<option value="8" id="f27208">Лебеденко</option>
+						<option value="9" id="f27209">Федоров</option>
+					</select>
+					<label for="input__engineer" class="active">
+						<span>Инженер</span>
+					</label>
+				</div>
+				<div class="input o-input__animation">
+					<input class="input__animation" id="input__counter_color" type="number" name="f_CounterColor">
+					<label for="input__counter_color">
+						<span>Полноцветных</span>
+					</label>
+					<div class="input__clear" style="display: none;"><img src="images/clear.svg" alt=""></div>
+				</div>
+				<div class="input o-input__animation">
+					<input class="input__animation" id="input__counter_bw" type="number" name="f_CounterBW">
+					<label for="input__counter_bw">
+						<span>Черно-белых</span>
+					</label>
+					<div class="input__clear" style="display: none;"><img src="images/clear.svg" alt=""></div>
+				</div>
+				<div class="input o-input__animation">
+					<input class="input__animation has_value" id="input__counter_copies" type="text" name="f_CounterCopies" readonly="" value="0">
+					<label for="input__counter_copies">
+						<span>Общий счетчик копий</span>
+					</label>
+					<div class="input__clear" style="display: none;"><img src="images/clear.svg" alt=""></div>
+				</div>
+				<div class="textarea">
+					<textarea name="f_Description" id="form__description" rows="1" placeholder="Описание">Плановое ТО</textarea>
+					<div class="input__clear input__clear--textarea"><img src="images/clear.svg" alt=""></div>
+				</div>
+				<div id="uploaded_files"></div>
+				<label class="upload_input">
+					<input type="file" name="Files[]" accept="image/jpeg,image/png,image/gif">
+					<span class="desc">jpg, png, gif</span>
+					<span class="upload_btn">Загрузить фото</span>
+				</label>
+				<div class='switchers'>
+					<div class='switchers__item'>
+						<label for='form__master-switcher' class='switchers__txt'>Подробности в офисе</label>
+						<div class='switchers__wrap'>
+							<input class='js-switch' id='form__details-switcher' type='checkbox' name='f_Master'>
+						</div>
+					</div>
+					<div class='switchers__item'>
+						<label for='form__product-switcher' class='switchers__txt'>Выставить счет</label>
+						<div class='switchers__wrap'>
+							<input class='js-switch' id='form__bill-switcher' type='checkbox' name='f_Expendables'>
+						</div>
+					</div>
+				</div>
+				<div class="spoiler">Информация о заказчике</div>
+				<div class="spoiler_content" style="display: none;">
+					<div class="input o-input__animation">
+						<input autocomplete="on" class="input__animation has_value" id="input__device" type="text" name="f_Model_MFU" value="bizhub C258">
+						<label for="input__device">
+							<span>Модель МФУ</span>
+						</label>
+						<div class="input__clear"><img src="images/clear.svg" alt=""></div>
+					</div>
+					<div class="input o-input__animation">
+						<input class="input__animation has_value" id="input__company-name" type="text" name="f_Company" value="ИП Грозный">
+						<label for="input__company-name">
+							<span>Название компании</span>
+						</label>
+						<div class="input__clear"><img src="images/clear.svg" alt=""></div>
+					</div>
+					<div class="input o-input__animation">
+						<input class="input__animation has_value" id="input__person-name" type="text" name="f_Name" value="Грозный Иван Васильевич">
+						<label for="input__person-name">
+							<span>Имя</span>
+						</label>
+						<div class="input__clear"><img src="images/clear.svg" alt=""></div>
+					</div>
+					<div class="input o-input__animation">
+						<input class="input__animation has_value" id="input__person-email" type="email" name="f_Email" value="ivan@grozniy.ru">
+						<label for="input__person-email">
+							<span>Email</span>
+						</label>
+						<div class="input__clear"><img src="images/clear.svg" alt=""></div>
+					</div>
+					<div class="input o-input__animation">
+						<input class="input__animation has_value" id="input__person-telephone" type="tel" name="f_Phone" value="+7 (921) 001-02-03">
+						<label for="input__person-telephone">
+							<span>Телефон</span>
+						</label>
+						<div class="input__clear"><img src="images/clear.svg" alt=""></div>
+					</div>
+					<div class="input o-input__animation">
+						<input class="input__animation has_value" id="input__person-address" type="text" name="f_Address" value="Москва, Кремль">
+						<label for="input__person-address">
+							<span>Адрес</span>
+						</label>
+						<div class="input__clear"><img src="images/clear.svg" alt=""></div>
+					</div>
+					<div class="textarea">
+						<textarea name="f_Comment" id="form__comment" rows="1" placeholder="Комментарий"></textarea>
+						<div class="input__clear input__clear--textarea" style="display: none;"><img src="images/clear.svg" alt=""></div>
+					</div>
+				</div>
+				<button class="form__submit" type="submit">Отправить</button>
+			</form>
+		</div>
+		<div class='form-success'>
+			<!-- SVG иконка с анимацией -->
+			<span class='form-success__icon'>
+				<svg viewBox='0 0 103 103' fill='none' xmlns='http://www.w3.org/2000/svg' id='el_SJmxPGlQOTX'><path d='M69.2564 51.3268H43.1077C41.7449 51.3268 40.5508 50.4153 40.1915 49.1008C39.8322 47.7864 40.3967 46.3941 41.5697 45.7006C52.9627 38.9686 58.8805 31.1157 59.6611 21.6932C59.9333 18.4231 62.8458 15.8111 66.1521 15.8544C69.5258 15.9083 72.6864 17.2605 75.0536 19.6625C77.4226 22.0667 78.7282 25.2505 78.7294 28.627C78.7294 28.6274 78.7294 28.6278 78.7294 28.6282V29.6439C78.7294 37.8919 76.2863 43.151 71.7787 49.9703C71.2184 50.8174 70.2715 51.3268 69.2564 51.3268Z' id='el_HyVlPGe7O67'/> <path d='M101.302 54.7531C101.302 49.5299 97.0531 45.2804 91.8297 45.2804H43.1077C42.5663 45.2804 42.0348 45.4256 41.5691 45.7012C38.149 47.7234 34.6957 49.3881 31.9209 50.7261C30.9531 51.1926 30.039 51.6334 29.2075 52.049C28.1833 52.5612 27.5364 53.6079 27.5364 54.7531V93.4504C27.5364 94.5956 28.1833 95.6423 29.2075 96.1545C41.4233 102.261 51.5776 103 63.4188 103C65.2525 103 67.1278 102.982 69.0562 102.964C71.1891 102.944 73.3941 102.923 75.706 102.923H85.2635C90.4867 102.923 94.7362 98.6738 94.7362 93.4504C94.7362 91.6941 94.256 90.0481 93.4196 88.6365C96.1412 86.9704 97.961 83.9695 97.961 80.5512C97.961 78.795 97.4808 77.149 96.6443 75.7374C99.366 74.0713 101.186 71.0704 101.186 67.6521C101.186 65.1954 100.246 62.9541 98.7066 61.2693C100.383 59.5028 101.302 57.1988 101.302 54.7531Z' id='el_ByrxwGxQdTQ'/><g id='el_ByolvfemO6m_rJcSfmu6Q' data-animator-group='true' data-animator-type='0'><path d='M95.014 28.3888H88.5645C86.8949 28.3888 85.5413 27.0351 85.5413 25.3655C85.5413 23.696 86.8949 22.3423 88.5645 22.3423H95.014C96.6836 22.3423 98.0372 23.696 98.0372 25.3655C98.0372 27.0351 96.6838 28.3888 95.014 28.3888Z' id='el_ByolvfemO6m'/></g> <g id='el_Hk3gPGl7uTX_r1vnZQu67' data-animator-group='true' data-animator-type='0'><path d='M49.8673 28.3888H43.4177C41.7482 28.3888 40.3945 27.0351 40.3945 25.3655C40.3945 23.696 41.7482 22.3423 43.4177 22.3423H49.8673C51.5368 22.3423 52.8905 23.696 52.8905 25.3655C52.8905 27.0351 51.5373 28.3888 49.8673 28.3888Z' id='el_Hk3gPGl7uTX'/></g> <g id='el_Sy6lPzgXupm_rJslMQdpm' data-animator-group='true' data-animator-type='0'><path d='M59.5447 11.633C58.4996 11.633 57.4836 11.0908 56.9238 10.121L53.699 4.53542C52.8641 3.0896 53.3596 1.24042 54.8054 0.405762C56.2513 -0.429102 58.1004 0.0663847 58.9351 1.51221L62.1599 7.09774C62.9948 8.54357 62.4993 10.3927 61.0534 11.2274C60.5775 11.5024 60.0574 11.633 59.5447 11.633Z' id='el_Sy6lPzgXupm'/></g> <g id='el_Sy0gPfxXu6m_B1DQMXOaX' data-animator-group='true' data-animator-type='0'><path d='M78.8872 11.633C78.3742 11.633 77.8544 11.5024 77.3784 11.2274C75.9326 10.3925 75.4371 8.54356 76.272 7.09774L79.4968 1.5122C80.3314 0.0663804 82.1806 -0.429508 83.6264 0.405757C85.0723 1.24062 85.5677 3.08959 84.7329 4.53541L81.5081 10.121C80.9486 11.0908 79.9321 11.633 78.8872 11.633Z' id='el_Sy0gPfxXu6m'/></g><path d='M30.5188 45.2804H4.72072C3.052 45.2804 1.69751 46.6349 1.69751 48.3036V99.8997C1.69751 101.57 3.052 102.923 4.72072 102.961H24.0692C27.7756 102.923 30.9903 100.784 32.5444 97.6766C33.1833 96.4048 33.542 94.9678 33.542 93.4502V48.3036C33.542 46.6347 32.1875 45.2804 30.5188 45.2804Z' id='el_rJg-wGlm_Tm'/></svg>
+			</span>
+			<div class='form-success__title'>Спасибо!</div>
+			<div class='form-succes__subtitile'>Ваша заявка принята.</div>
+			<div class='form-succes__txt'>Менеджер свяжется с вами<br>в ближайшее время.</div>
+		</div>
+		<footer class='footer'>
+			<div class='footer__logo'>
+				<img src='images/logo__5p.svg' alt='Пятый партнер сервис'>
+			</div>
+			<a href='tel:+74956460426' class='footer__telephone'>+7 495 646-04-26</a>
+			<div class='footer__txt'>Пн-Пт 10:00-18:00<br>Москва, 8-й проезд Марьиной Рощи 30</div>
+		</footer>
+	</div>
+	<script src='js/jquery.min.js'></script>
+	<script src='js/switchery.min.js'></script>
+	<script src='js/script.js'></script>
+</body>
+</html>

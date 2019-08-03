@@ -1,0 +1,217 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Доступ приостановлен</title>
+	<link href="img/icon.png" id="favicon" rel="icon" type="image/x-icon">
+	
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/sweetalert.css">
+
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="js/sweetalert.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			//
+			$('.zero__toggle-btn').click(function () {
+				$(this).next().slideToggle();
+			});
+
+			//
+			$('.pay__toggle').click(function () {
+				$(this).parent().next().slideToggle();				
+			});
+
+			//
+			var checkbox = $('.form-credit input');
+			var submit = $('.form-credit__submit');
+			checkbox.on('change', function() {
+				if(checkbox.prop('checked')) {
+					submit.attr('disabled', false);
+				} else {
+					submit.attr('disabled', true);
+				}
+			});
+
+			//
+			$('.form-credit__submit').click(function(e){
+				e.preventDefault();
+				swal("Успешно!", "Интернет будет включен в течении 2 минут", "success");
+			});
+
+			//
+			$("body").on('click', '[href*="#"]', function(e){
+			  $('html,body').stop().animate({scrollTop: $(this.hash).offset().top}, 1000);
+			  e.preventDefault();
+			});
+		})
+	</script>
+</head>
+<body>
+	
+	<div class="zero">
+		<div class="container">
+			<div class="row">
+				<div class="zero__img"><img src="img/cat.png" alt=""></div>
+				<div class="zero__box">
+					<div class="zero__txt">
+						<div class="zero__title">К сожалению, доступ в&nbsp;интернет сейчас приостановлен</div>
+						<div class="zero__toggle-btn"><span>узнать причину</span></div>
+						<div class="zero__toggle" style="display: none;">Сервис не доступен в демонстрационной версии</div>
+					</div>
+					<div class="zero__btn-group">
+						<a href="#pay" class="btn zero__btn zero__btn--pay">Оплатить</a>
+						<a href="#credit" class="btn zero__btn zero__btn--credit">Обещанный платеж</a>
+					</div>
+				</div>					
+			</div>
+		</div>
+	</div>
+	<section id="pay">
+		<div class="container">
+			<div class="row">
+				<h1>Способы оплаты</h1>
+				<div class="pay">
+					<h3 class="pay__title">Наличными в офисе</h3>
+					<div class="pay__item">
+						<div class="col-7">
+							<h4>Наш адрес:</h4>
+							<p>Бизнес-центр "Меридиан"<br>Великий Устюг, ул. Красная 108А, офис 48</p>
+							<h4>Режим работы:</h4>
+							<p>с 08:00 до 19:00<br>выходные: суббота, воскресенье</p>
+						</div>
+						<div class="col-5">
+							<h4>Контакты</h4>
+							<p>
+								<a href="tel:88173823031">8 (817-38) 2-30-31</a>
+								<a href="tel:89315008225">8 931 500-82-25</a>
+								<a href="mailto:mail@terabitvu.ru">mail@terabitvu.ru</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="pay">
+					<div class="pay__head">
+						<h3 class="pay__title">Единая квитанция ЖКХ</h3>
+						<div class="pay__toggle">Подробнее</div>
+					</div>
+					<div class="pay__txt" style="display: none;">
+						<div class="info-box info-box--red"><span>Внимание! Информация о платеже поступает на следующий банковский день. Без комиссии.</span></div>
+						<p>В привычной для всех квитанции за свет появился новый раздел - Интернет.</p>
+						<p>Оплата счета по этой квитанции происходит точно так же, как и опалат за свет.</p>
+						<p>Если возникли вопросы - звоните нам 2-30-31.</p>
+					</div>
+				</div>
+				<div class="pay">
+					<div class="pay__head">
+						<h3 class="pay__title">Банковской картой через интернет</h3>
+						<div class="pay__toggle">Подробнее</div>
+					</div>
+					<div class="pay__txt" style="display: none;">
+						<div class="info-box info-box--white"><span>Моментальное зачисление без комиссии на ваш лицевой счет</span></div>
+						<ol>
+							<li><span class="pay__li pay__li--link">Перейдите в <a href="#">личный кабинет</a></span></li>
+							<li><span class="pay__li">В левом меню нажите "Оплата услуг"</span></li>
+							<li><span class="pay__li">Нажмите НКО "ЯНДЕКС.ДЕНЬГИ"</span></li>
+							<li><span class="pay__li">В графе "Способ совершения платежа" выберите "Платеж с банковской карты"</span></li>
+							<li><span class="pay__li">Заполните поле "Сумма"</span></li>
+							<li><span class="pay__li">Нажмите "Оплатить"</span></li>
+							<li>
+								<span class="pay__li">
+									<span>После нажатия на кнопку “Перейти к оплате” вы попадаете на страницу сервиса Яндекс.Деньги, где необходимо ввести данные вашей карты.</span>
+									<img src="img/yamoney-5.png" alt="">
+									<span class="small">В данном случае вы передаёте данные напрямую сервису Яндекс.Деньги по шифрованному каналу связи. Это означает, что никто кроме компании Яндекс (в том числе Терабит) не увидит данные, которые вы ввели.</span>
+								</span>
+							</li>
+							<li><span class="pay__li">После ввода данных необходимо нажать на кнопку “Заплатить”</span></li>
+							<li><span class="pay__li">Далее вы попадёте на сайт вашего банка, который запросит подтверждение платежа. Обычно это смс с кодом подтверждения. После подтверждения деньги автоматически поступят на ваш лицевой счет.</span></li>
+						</ol>
+						<p>Для возврата в личный кабинет, нажмите на ссылку “Перейти на сайт магазина”.</p>
+					</div>
+				</div>
+				<div class="pay">
+					<div class="pay__head">
+						<h3 class="pay__title">Яндекс.Деньги</h3>
+						<div class="pay__toggle">Подробнее</div>
+					</div>
+					<div class="pay__txt" style="display: none;">
+						<div class="info-box info-box--white"><span>Моментальное зачисление без комиссии на ваш лицевой счет</span></div>
+						<ol>
+							<li><span class="pay__li pay__li--link">Перейдите в <a href="#">личный кабинет</a></span></li>
+							<li><span class="pay__li">В левом меню нажите "Оплата услуг"</span></li>
+							<li><span class="pay__li">Нажмите НКО "ЯНДЕКС.ДЕНЬГИ"</span></li>
+							<li><span class="pay__li">В графе "Способ совершения платежа" выберите "Платеж со счета в Яндекс.Деньгах"</span></li>
+							<li>
+								<span class="pay__li">
+									<span>Заполните поле "Сумма"</span>
+									<img src="img/yamoney-ym4.png" alt="">
+								</span>
+							</li>
+							<li><span class="pay__li">Нажмите "Оплатить"</span></li>
+							<li><span class="pay__li">После нажатия на кнопку “Оплатить” вы попадаете на страницу сервиса Яндекс.Деньги. Здесь необходимо нажать на кнопку “Получить пароль” и ввести полученный пароль в появившееся поле.</span></li>
+							<li><span class="pay__li">Нажмите на кнопку “Оплатить”</span></li>
+						</ol>
+					</div>
+				</div>
+				<div class="pay">
+					<div class="pay__head">
+						<h3 class="pay__title">Терминал Сбербанка</h3>
+						<div class="pay__toggle">Подробнее</div>
+					</div>
+					<div class="pay__txt" style="display: none;">
+						<div class="info-box info-box--red"><span>Внимание! Информация о платеже поступает на следующий банковский день. Без комиссии.</span></div>
+						<p>Ваш номер счёта – это шесть нулей и четыре цифры из номера договора. Например, если договор Ф-0123, то номер счёта будет 0000000123.</p>
+						<p>Для оплаты нужно выполнить следующие действия:</p>
+						<img src="img/sber-inst.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="credit" class="light-gray">
+		<div class="container">
+			<div class="row">
+				<h1>Обещанный платеж</h1>
+				<p>Если вы не успели вовремя оплатить услуги нашей компании, вы можете воспользоваться бесплатной услугой “Обещанный платёж”.</p>
+				<p>Благодаря ей, мы можем пополнить ваш счёт на необходимую сумму в обмен на обещание погасить долг в течении 5 дней.</p>
+				<form action="" class="form-credit">
+					<label><input type="checkbox">Я понял все условия и хочу взять обещанный платёж</label>
+					<button type="submit" class="btn form-credit__submit" disabled="disabled">Включить интернет!</button>
+				</form>
+			</div>
+		</div>
+	</section>
+	<section class="blue">
+		<div class="container">
+			<div class="row">
+				<h3>Список бесплатных сайтов</h3>
+				<div class="free-site">
+					<a href="https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" target="_blank">Википедия</a>
+					<a href="https://ru.wikiquote.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" target="_blank">Викицитатник</a>
+					<a href="https://ru.wikisource.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" target="_blank">Викитека</a>
+					<a href="https://ru.wikiversity.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" target="_blank">Викиверситет</a>
+					<a href="https://ru.wikinews.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" target="_blank">Викиновости</a>
+					<a href="https://www.translate.ru/" target="_blank">Переводчик</a>
+					<a href="http://gramota.ru/" target="_blank">Грамота.ру</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer__contact">
+					<div class="footer__icon"></div>
+					<div class="footer__txt">
+						<a href="tel:88173823031" class="footer__tel">8 (817-38) 2-30-31</a>
+						<a href="tel:89315008225" class="footer__tel">8 931 500-82-25</a>
+						<div class="small">Мы готовы помочь в любую минуту</div>
+					</div>
+				</div>
+				<div class="footer__copyright">© 2016 Терабит. Все права защищены.</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
