@@ -426,21 +426,50 @@ label input {
 }
 
 @media (max-width: 991.98px) {
-  .zero .row {
-    align-items: center;
+  .container {
+    width: 100%;
+    padding: 15px 0;
   }
-  .zero__img {
-    order: 2;
-    position: relative;
-    left: -189px;
-    top: 0;
+  h1 {
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .zero {
+    height: inherit;
+  }
+  .zero__toggle-btn {
+    text-align: center;
+  }
+  .zero__img, .zero::after, .info-box span::before, ol li::before {
+    display: none;
   }
   .zero__box {
+    width: 100%;
     top: 20px;
-    text-align: center;
+    text-align: left;
     margin-bottom: 50px;
   }
-  .zero::after {
-    height: 134px;
+  .zero .row {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .zero__btn-group {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .zero__btn-group a {
+    margin-bottom: 30px;
+  }
+  .zero__btn-group a:first-child {
+    margin-right: 30px;
+  }
+  .pay__item, .pay__head {
+    flex-wrap: wrap;
+  }
+  .col-7, .col-5, .pay__head h3 {
+    width: 100%;
+  }
+  .pay__toggle, .pay__title {
+    margin-bottom: 15px;
   }
 }
