@@ -19,6 +19,9 @@
 .done {
 	opacity: 0 !important;
 }
+.hide {
+	display: none !important;
+}
 .cssload-st-loader {
 	width: 10em;
 	height: 2.5em;
