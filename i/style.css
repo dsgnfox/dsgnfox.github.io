@@ -248,6 +248,7 @@ img {
 	background-image: url('../i/icon-mobile.svg');
 }
 .portfolio__body {
+	line-height: 1.5;
 	opacity: .5;
 }
 .footer {
