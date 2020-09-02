@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .darth {
+            width: 100%;
+            min-height: 100vh;
+            max-height: 100vh;
+            background-image: url('img/bg.jpg');
+            background-size: cover;
+            background-position: center;
+            overflow: hidden;
+        }
+        .darth-container {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            padding: 0 15px;
+        }
+        .darth-img {
+            max-width: 500px;
+            width: 100%;
+            padding: 120px 10% 0 0;
+        }
+        .darth-img img, .darth-text__title img {
+            display: block;
+            max-width: 100%;
+            height: auto;            
+        }
+        .darth-text__title::after {
+            content: '';
+            display: block;
+            width: 160px;
+            height: 2px;
+            margin: 30px auto;
+            background-color: #000000;
+            opacity: .2;
+        }
+        .darth-text__subtitle {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+            line-height: 40px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        @media(max-width: 1024px) {
+            .darth-img {
+                padding: 10px 5% 0 0;
+            }
+        }
+        @media(max-width: 991px) {
+            .darth-container {
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: reverse;
+                    -ms-flex-direction: column-reverse;
+                        flex-direction: column-reverse;                
+                padding: 45px 30px 0;
+            }
+            .darth-img {
+                position: relative;
+                bottom: -40px;
+                padding: 0;
+            }
+            .darth-text {
+                margin-bottom: 40px;
+            }
+            .darth-text__subtitle {
+                font-size: 16px;
+                line-height: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!--
+    *************************************** 
+    COME TO THE DARK SIDE! WE HAVE COOKIES!
+    ***************************************
+    -->
+    <div class="darth">
+        <div class="darth-container">
+            <div class="darth-img"><img src="img/darth_vader.png" alt=""></div>
+            <div class="darth-text">
+                <div class="darth-text__title"><img src="img/logo.svg" alt=""></div>
+                <div class="darth-text__subtitle">Это не&nbsp;те&nbsp;дроиды, что&nbsp;вы&nbsp;ищете</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
